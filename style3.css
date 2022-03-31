@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to left, #BAD9CE, #8AA69E);
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    color: #402d09;
+}
+/* 
+id em HTML = # em CSS
+class em HTML = . em CSS
+*/
+h1#principal {
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: underline;
+    background-color: #402D09;
+    color: white;
+    border-radius: 30px;
+    text-shadow: 2px 1px 1px #261F0A;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.basico {
+    color: #116b11;
+    font-weight: bold;
+}
+
+.inter {
+    color: #ffc400;
+    font-weight: bold;
+}
+
+.avan {
+    color: #ff2600ea;
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: #c5c535ce;
+}
+
+.tabela {
+    border: 1px solid #000000;
+    border-color: #116b11;
+    color: #402d09;
+}

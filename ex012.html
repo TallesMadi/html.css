@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+    <style>
+        cor {
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1><cor>Imagens Dinâmicas</cor></h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagem/m.png" type="image/png">
+        <img src="imagem/g.png" alt="Foto G">
+    </picture>
+    <h1><cor>Reproduzindo Áudios</cor></h1>
+    <p>Vamos reporduzir áudios em HTML5.</p>
+    <audio src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" controls></audio> <!-- mp3 WAV OGG -->
+    <hr>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" type="audio/mpeg">
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" type="audio/ogg">
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/Drifting at 432 Hz - Unicorn Heads.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>

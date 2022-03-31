@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inspiration&family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    /*
+    usar ./ = mesma pasta
+    usar ../ = volte uma pasta
+    */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    height: auto;
+}
+
+:root {
+    --corfundo: #c5ebd6;
+    --corverde1: #30D979;
+    --corverde2: #2CBF6C;
+    --corverde3: #145932;
+
+    --fontpadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontedestaque: 'Bebas Neue', cursive;
+    --fonteandroid: 'Android', cursive;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--corverde1), var(--corverde2), var(--corverde3));
+    color: white;
+    padding: 2% auto 0px auto;
+    font-family: var(--fontedestaque);
+    margin: 0%;
+}
+
+header h1 {
+    padding: 1%;
+    margin: 0px auto 16px auto;
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fontedestaque);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.151);
+}
+
+header > p {
+    margin: 2% 10%;
+    padding: 5px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: var(--fontpadrao);
+    font-size: 0.9em;
+}
+
+article > h1 {
+    padding: 1%;
+    margin: 0px auto 16px auto;
+    text-align: left;
+    font-family: var(--fonteandroid);
+    font-weight: bold;
+    color: var(--corverde3);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--corfundo);
+    font-family: var(--fontpadrao);
+}
+
+h2 {
+    font-family: 'Android';
+    font-weight: lighter;
+    color: var(--corverde3);
+    font-family: var(--fonteandroid);
+    background-image: linear-gradient(to right, var(--corfundo), transparent) ;
+    text-indent: 8px;
+}
+
+nav > a {
+    color: var(--corfundo);
+    text-decoration: none;
+    margin: 10px 0px;
+    padding: 10px 15px 5px 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #30D979;
+    transition-duration: 1s;
+}
+
+nav {
+    font-family: var(--fontedestaque);
+    padding: 1%;
+}
+
+strong {
+    color: #145932;
+    font-weight: bold;
+}
+
+main a {
+    color: #145932;
+    background-color: var(--corfundo);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+main a::after {
+    content: '\00A0\1F517';
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 400px;
+    padding: 3%;
+    margin: 0px auto 10px auto;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 2p rgba(0, 0, 0, 0.281);
+}
+
+aside {
+    background-color: var(--corfundo);
+    border-radius: 5px;
+    padding: 0px 10px 3px 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+}
+
+h3 {
+    text-indent: 10px;
+    padding: 5px;
+    color: white;
+    background-color: var(--corverde2);
+    border-radius: 5px 5px 0px 0px;
+    margin: 10px -10px 0px -10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    padding: 1px;
+    background-color: #145932;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 0.8em;
+
+}
+
+a.foot {
+    color: white;
+    text-decoration: none;
+}
+
+a.foot:hover {
+    text-decoration: underline;
+    color: var(--corfundo);
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+img.pequeno {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--corverde3);
+    margin: 0px -12px 30px -12px;
+    padding: 20px;
+    padding-bottom: 65%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 90%;
+    height: 90%;
+}

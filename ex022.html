@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'gotico';
+            src: url('GothicWar.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format():
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: 'gotico', sans-serif;
+            font-size: 2em;
+            background-image: linear-gradient(to right, #735F50, #5E4B42, #4A2C32);
+        }
+        h1 {
+            font-family: 'gotico', Times, serif;
+            text-align: center;
+            font-size: 4em;
+            text-shadow: 3px 3px 3px #565a613f;    
+        }
+        main {
+            background-color: #C1CCDE;
+            border-style: groove;
+            color: #1C080F;
+            box-shadow: 3px 3px 3px #302621ab;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SKYRIM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos mollitia porro incidunt ea nesciunt fugit voluptas, molestias ducimus, commodi consequuntur voluptatum impedit. Iste similique praesentium earum doloremque molestias? Ducimus, aliquam?</p>
+    </main>
+    
+</body>
+</html>

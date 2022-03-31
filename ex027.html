@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelos de Caixas</title>
+    <style>
+        a { /*inline-level*/
+            color: black;
+            border: 1px dotted black;
+            /*
+            border-width, style and color
+            */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            border-color: red;
+            padding: 2px; 
+            /*
+            ordem: top, right, bottom, left
+            se todos forem iguais, é necessario informar apenas uma vez.
+            */
+        }
+
+        h1 { /*Box-level*/
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+            border: 3px solif darkgreen;
+            box-shadow: 10px 10px green;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            outline: 3px dashed darkgray;
+        }
+    
+        h1:hover {
+            background-color: lightsalmon;
+            border-color: red;
+            padding: 10px;
+            box-shadow: 10px 10px darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-level</h1>
+    <br>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://google.com" target="_blank" rel="nofollow">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

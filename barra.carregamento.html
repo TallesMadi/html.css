@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste</title>
+    <style>
+        .container {
+            height: 25px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: relative;
+        }
+
+        @keyframes progress-animation {
+            0% {width: 0%;}
+            100% {width: 100%;}
+        }
+        
+        .container .progress-bar {
+            position: absolute;
+            height: 100%;
+            background-color: #e42214;
+            animation: progress-animation 5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar"></div>
+    </div>
+    
+</body>
+</html>

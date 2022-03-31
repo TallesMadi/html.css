@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+    <style>
+        cor {
+            color: crimson;
+        }
+        fonte {
+            font-size: larger;
+        }
+        fundo {
+            background-color: rgb(18, 20, 20);
+        }
+    </style>
+</head>
+<body background="fundo.brick.jpg">
+    <h1><cor><fundo>Inserindo vídeos hospedados localmente.</fundo></cor></h1>
+    <p><cor><fonte><fundo>Este vídeo está hospedado no meu próprio servidor.</fundo></fonte></cor></p>
+    <!-- <video src="midia/Bandeja.Reversa.wb.webm" controls></video> -->
+    <video width="560" autoplay controls loop> <!-- Use a tag <poster> para colocar uma thumbnail -->
+        <source src="midia/Bandeja.Reversa.ytb.m4v" type="video/m4v">
+        <source src="midia/Bandeja.Reversa.wb.webm" type="video/webm">
+        <source src="midia/bandeja.reversa.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1><cor>Inserindo Vídeos do Youtube</cor></h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?start=4"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1><cor>Inserindo Vídeos do Vimeo</cor></h1>
+    <iframe src="https://player.vimeo.com/video/273764697?h=113c558fea" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
