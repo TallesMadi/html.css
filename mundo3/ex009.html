@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
+            <td>Maria</td>
+            <td>Shrek</td>
+            <td>Shrek 2</td>
+            <td>Shrek 3</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>Ben 10</td>
+            <td>Bob Esponja</td>
+            <td>Narcos</td>
+        </tr>
+        <tr>
+            <td>Clementina</td>
+            <td>MIB</td>
+            <td>Eu sou a Lenda</td>
+            <td>Hancock</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">Homens</th>
+            <td>LeBron</td>
+            <td>Space Jam</td>
+            <td>Descarrilada</td>
+            <td>Smallfoot</td>
+        </tr>
+        <tr>
+            <td>Augusto</td>
+            <td>300</td>
+            <td>Menino do Pijama Listrado</td>
+            <td>Lobo de Wallstreet</td>
+        </tr>
+        <tr>
+            <td>Antônio</td>
+            <td>Clube da Luta</td>
+            <td>12 Homens e Um Segredo</td>
+            <td>Ilha do Medo</td>
+        </tr>
+    </table>
 </body>
 </html>
