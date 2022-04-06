@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 7px;
+        }
+
+        table {
+            width: 500px;
+            height: 800px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        tbody td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        /* odd, even, 2n, 3n...*/
+        tbody > tr:nth-child(odd)  {
+            background-color: rgb(221, 225, 226);
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: cadetblue;
+            border: 1px solid black;
+        }
+
+        tfoot td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th.num {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD 
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+     -->
+     <table>
+         <caption>
+             Top 10 estados com maior população 
+         </caption>
+         <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th class="num" scope="col">População</th>
+            </tr>
+         </thead>
+         <tbody>
+             <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 164 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 433 967</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">6 248 436</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero">152 332 059</td>
+            </tr>
+         </tfoot>
+     </table>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus animi accusantium earum libero ratione voluptas explicabo, ex quisquam, magnam fuga repudiandae quae aut ducimus, eos tempore veritatis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur sed dolor provident, fugiat delectus aperiam ab quod culpa veniam, ipsa recusandae? Tenetur maxime pariatur, nam nesciunt culpa ab veritatis?
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur pariatur id nulla sit consectetur saepe repellendus, similique laudantium vero magnam quasi eaque ipsam incidunt sint optio, animi neque Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia perspiciatis facilis consequatur earum possimus explicabo labore neque? Corrupti, voluptate maxime dolorum illo voluptates laboriosam, quis blanditiis vitae pariatur, atque error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora unde totam, sapiente accusamus dignissimos iusto perferendis ex dolore iste omnis odit voluptatem cupiditate ad. Expedita cupiditate accusamus distinctio qui hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit ullam quam labore aliquid nihil perspiciatis voluptas esse atque perferendis officiis distinctio, aspernatur necessitatibus suscipit doloremque culpa doloribus veritatis amet!
+     </p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus animi accusantium earum libero ratione voluptas explicabo, ex quisquam, magnam fuga repudiandae quae aut ducimus, eos tempore veritatis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur sed dolor provident, fugiat delectus aperiam ab quod culpa veniam, ipsa recusandae? Tenetur maxime pariatur, nam nesciunt culpa ab veritatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur pariatur id nulla sit consectetur saepe repellendus, similique laudantium vero magnam quasi eaque ipsam incidunt sint optio, animi neque Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia perspiciatis facilis consequatur earum possimus explicabo labore neque? Corrupti, voluptate maxime dolorum illo voluptates laboriosam, quis blanditiis vitae pariatur, atque error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora unde totam, sapiente accusamus dignissimos iusto perferendis ex dolore iste omnis odit voluptatem cupiditate ad. Expedita cupiditate accusamus distinctio qui hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit ullam quam labore aliquid nihil perspiciatis voluptas esse atque perferendis officiis distinctio, aspernatur necessitatibus suscipit doloremque culpa doloribus veritatis amet!
+    </p>     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus animi accusantium earum libero ratione voluptas explicabo, ex quisquam, magnam fuga repudiandae quae aut ducimus, eos tempore veritatis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur sed dolor provident, fugiat delectus aperiam ab quod culpa veniam, ipsa recusandae? Tenetur maxime pariatur, nam nesciunt culpa ab veritatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur pariatur id nulla sit consectetur saepe repellendus, similique laudantium vero magnam quasi eaque ipsam incidunt sint optio, animi neque Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia perspiciatis facilis consequatur earum possimus explicabo labore neque? Corrupti, voluptate maxime dolorum illo voluptates laboriosam, quis blanditiis vitae pariatur, atque error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora unde totam, sapiente accusamus dignissimos iusto perferendis ex dolore iste omnis odit voluptatem cupiditate ad. Expedita cupiditate accusamus distinctio qui hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit ullam quam labore aliquid nihil perspiciatis voluptas esse atque perferendis officiis distinctio, aspernatur necessitatibus suscipit doloremque culpa doloribus veritatis amet!
+    </p>
+</body>
+</html>
