@@ -5,8 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption {
+            background-color: #c7c4c4;
+            padding: 10px;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        col.cnome {
+            background-color: greenyellow;
+        }
+
+        col.csexo {
+            background-color: lightcoral;
+        }
+
+        col.cidade {
+            background-color: cadetblue;
+        }
+
+        col.cprof {
+            background-color: violet;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <!-- Pode-se juntar 2 colunas com span="2" -->
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</td>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Meretriz</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>67</td>
+            <td>Desempregada</td>
+        </tr>
+        <tr>
+            <td>Xuxa</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Sapateiro</td>
+        </tr>
+    </table>
 </body>
 </html>
