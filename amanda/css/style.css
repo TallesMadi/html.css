@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2F437A;
+}
+header p {
+    text-align: center;
+    color: white;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Akshar', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+    font-size: 3.5em;
+}
+h2 {
+    font-family: 'Akshar', sans-serif;
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px;
+    background-image: linear-gradient(to right, #5F88FA, #8cabff, white);
+    color: white;
+}
+main p {
+    text-align: justify;
+    padding: 3px;
+    margin: 10px;
+    line-height: 1.3em;
+    text-indent: 7px;
+}
+main p a {
+    color: black;
+    text-decoration: none;
+}
+div.foto {
+    margin: auto;
+    text-align: center;
+    max-width: 750px;
+    height: 300px;
+    background: white url('../imagens/fotopc.jpg') center center no-repeat scroll;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+}
+div.vid {
+    position: relative;
+    text-align: center;
+    height: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+    background-color: #2F437A;
+    margin: 0px -12px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+header {
+    margin: auto;
+    padding: 30px;
+    background-color: #5F88FA;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+main {
+    max-width: 800px;
+    background-color: white;
+    margin: 1px auto;
+    padding: 15px;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    transition: .5s;
+}
