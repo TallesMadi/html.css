@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        div {
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        .parent {
+            background-color: blue;
+            position: relative;
+        }
+
+        .child-one {
+            background-color: #1cbe1c;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: inherit;
+
+        }
+
+        .child-two {
+            background-color: salmon;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .child-three {
+            background-color: #c92fc9;
+            
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                font-size: 1.5em;            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-one">One</div>
+        <div class="child-two">Two</div>
+        <div class="child-three">Three</div>
+    </div>
+</body>
+</html>

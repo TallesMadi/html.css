@@ -6,7 +6,7 @@ function lista() {
            lista.style.opacity = "0"
            lista.style.overflow = "hidden"
        } else {
-        lista.style.height = "100px"
+        lista.style.height = "fit-content"
         lista.style.opacity = "1"
         lista.style.overflow = "inherit"
        }

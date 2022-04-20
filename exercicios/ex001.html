@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            color: red;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        @media all and (max-width: 600px) {
+            body {
+                color: blue;
+            }
+        }
+        /*all and pode ser omitido*/
+        @media (orientation: landscape) and (max-width: 1000px) {
+            h1 {
+                color: green;
+            }
+        }
+        /* and pode ser usado e , tambem*/
+        @media (orientation: portrait) {
+            h2 {
+                color: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bom Dia!</h1>
+    <h2>Boa Tarde!</h2>
+    <h3>Boa Noite!</h3>
+</body>
+</html>

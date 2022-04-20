@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 body {
-    background-image: linear-gradient(to right, #02731E, #049127);
+    background-image: linear-gradient(to right, #00b62d, #09b333);
     height: 100vh;
     padding: 0px;
     margin: 0px;
@@ -22,7 +22,7 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 40px;
     padding: 10px auto;
     margin-bottom: 144px;
 }
@@ -64,20 +64,17 @@ main p {
 div#lista {
     margin: 0px auto;
     text-align: left;
-    padding: 5px;
     background-color: #014023;
-    width: 71vw;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
     opacity: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
     display: block;
     position: absolute;
-    z-index: auto;
-    right: 25%;
-    border-radius: 5px;
+    border-radius: 0px 0px 7.5px 7.5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
-    margin-top: 1.5%;
+    top: 270px
 }
 
 div.foto {
@@ -95,22 +92,22 @@ input#botao {
     background-color: transparent;
     color: white;
     border: none;
-    font-size: 1.5em;
+    font-size: 25px;
     padding: 6px;
-    
+    position: relative;
 }
 #botao:hover {
     background-color: #02731E;
-    transition: all 0.3s ease-in;
+    transition: 0.1s;
 }
 ul {
-    columns: 4;
     text-align: left;
     padding: 10px;
+    list-style: none;
 }
 li {
     list-style-position: inside;
-    padding: 5px;
+    padding: 15px 5px;
     margin: 5px;
     color: white;
 }
@@ -131,4 +128,22 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (min-width: 800px) {
+    input#botao {
+        font-size: 27px;
+    }
+    li {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 50px;
+    }
+    main {
+        margin-top: 27px;
+    }
+        div#lista {
+        top: 295px;
+    }
 }
