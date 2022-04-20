@@ -4,141 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Trabalho</title>
-    <style>
-        body {
-            background-image: linear-gradient(to right, #02731E, #049127);
-            height: 100vh;
-            padding: 0px;
-            margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        header {
-            margin: 0px auto;
-            padding: 10px 0px;
-            color: white;
-            background: green url('imagem/background001.jpg') center center no-repeat scroll;
-            background-size: cover;
-            height: 250px;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
-        }
-
-        header h1 {
-            text-align: center;
-            font-size: 2.5em;
-            padding: 10px auto;
-            margin-bottom: 144px;
-        }
-
-        header nav {
-            padding: 0px;
-            margin: 0px auto ;
-            background-color: #014023;
-            display: block;
-            box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.199);
-        }
-
-        main {
-            background-color: white;
-            padding: 15px;
-            margin: auto;
-            max-width: 800px;
-        }
-
-        h2.top {
-            text-align: center;
-            text-decoration: underline;
-        }
-        h2 {
-            background-image: linear-gradient(to right, #02731E, white);
-            padding: 5px;
-            color: white;
-        }
-
-        main p {
-            text-align: justify;
-            line-height: 1.2em;
-            text-indent: 10px;
-        }
-        div#servicos {
-            margin: 0px auto;
-            text-align: left;
-            padding: 5px;
-            background-color: #014023;
-            width: 71vw;
-            height: 100px;
-            opacity: 0;
-            overflow: hidden;
-            transition: all 0.5s ease-in;
-            display: block;
-            position: absolute;
-            z-index: auto;
-            right: 25%;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
-            margin-top: 1.5%;
-        }
-
-        div.foto {
-            background: green url('imagem/fazenda.jpg') center center no-repeat scroll;
-            background-size: cover;
-            text-align: center;
-            margin: auto;
-            max-width: 750px;
-            height: 300px;
-            border-radius: 10px;
-        }
-
-        input#botao {
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-size: 1.5em;
-            padding: 8px;
-            
-        }
-        #botao:hover {
-            background-color: #02731E;
-            transition: all 0.3s ease-in;
-        }
-        ul {
-            columns: 4;
-            text-align: left;
-            padding: 10px;
-        }
-        li {
-            list-style-position: inside;
-            padding: 5px;
-            margin: 5px;
-            color: white;
-        }
-
-        ul a {
-            color: white;
-            text-decoration: none;
-            height: fit-content;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #02731E;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Trabalho</h1>
         <nav>
             <input type="button" value="&#9776;" onclick="lista()" id="botao">
-<div id="servicos">
+<div id="lista">
             <ul>
                 <li><a href="@" target="_blank" rel="nofollow">Termo1</a></li>
                 <li><a href="@" target="_blank" rel="nofollow">Termo2</a></li>
@@ -188,20 +62,6 @@
     <footer>
         <p>&#169; Alunos Trabalho UNIP</p>
     </footer>
-    <script>
-        function lista() {
- var divServicos = document.getElementById("servicos");
-    
-    if (divServicos.style.overflow == "inherit") {
-        divServicos.style.height = "0";
-        divServicos.style.opacity = "0";
-        divServicos.style.overflow = "hidden";
-    } else {
-     divServicos.style.height = "100px";
-     divServicos.style.opacity = "1";
-     divServicos.style.overflow = "inherit";
-    }
-}
-    </script>
+    <script src="javascript/js.js" defer></script>
 </body>
 </html>
