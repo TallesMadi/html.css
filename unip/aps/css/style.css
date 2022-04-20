@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 body {
-    background-image: linear-gradient(to right, #00b62d, #09b333);
+    background-color: #59b46f;
     height: 100vh;
     padding: 0px;
     margin: 0px;
@@ -38,7 +38,7 @@ header nav {
 main {
     background-color: white;
     padding: 15px;
-    margin: 3px auto;
+    margin: 3px auto 0px auto;
     max-width: 800px;
 }
 
@@ -48,7 +48,7 @@ h2.top {
 }
 h2 {
     background-image: linear-gradient(to right, #02731E, white);
-    padding: 5px;
+    padding: 5px 0px 5px 10px;
     color: white;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 }
 
 footer {
-    background-color: #02731E;
+    background-image: linear-gradient(to top, #014023, #006435);
     color: white;
     text-align: center;
     padding: 10px;
