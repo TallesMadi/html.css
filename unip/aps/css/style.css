@@ -4,7 +4,6 @@
 
 body {
     background-color: #59b46f;
-    height: 100vh;
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,18 +27,21 @@ header h1 {
 }
 
 header nav {
-    padding: 0px;
+    padding: 5px;
     margin: 0px auto ;
     background-image: linear-gradient(to top, #014023, #006435);
     display: block;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.199);
 }
 
 main {
     background-color: white;
     padding: 15px;
-    margin: 3px auto 0px auto;
-    max-width: 800px;
+    margin: 0px auto;
+    max-width: 1000px;
 }
 
 h2.top {
@@ -61,8 +63,24 @@ main p {
     line-height: 1.2em;
     text-indent: 10px;
 }
+
+main a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0px;
+}
+
 div#lista {
-    margin: 0px auto;
+    margin: -3px auto 0px auto;
     text-align: left;
     background-color: #014023;
     width: fit-content;
@@ -74,7 +92,8 @@ div#lista {
     position: absolute;
     border-radius: 0px 0px 7.5px 7.5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
-    top: 273px
+    top: 45px;
+    left: 0;
 }
 
 div.foto {
@@ -143,7 +162,8 @@ footer {
     main {
         margin-top: 26px;
     }
-        div#lista {
+    div#lista {
         top: 295px;
+        top: 61px
     }
 }
