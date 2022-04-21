@@ -83,11 +83,11 @@ div#lista {
     margin: -3px auto 0px auto;
     text-align: left;
     background-color: #014023;
-    width: fit-content;
+    width: 30%;
     height: fit-content;
     opacity: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     display: block;
     position: absolute;
     border-radius: 0px 0px 7.5px 7.5px;
@@ -114,16 +114,18 @@ input#botao {
     font-size: 25px;
     padding: 6px;
     position: relative;
+    transition: all 0.5s ease-in-out;
 }
 #botao:hover {
     background-color: #02731E;
-    transition: 0.1s;
 }
 ul {
     text-align: left;
     padding: 10px;
     list-style: none;
+    list-style-type: '\27A1\00A0\00A0';
 }
+
 li {
     list-style-position: inside;
     padding: 15px 5px;
