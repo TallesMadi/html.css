@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown Menus</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: aliceblue;
+            display: flex;
+            align-items: baseline;
+            padding: .5rem;
+            gap: 1rem;
+        }
+
+        .link {
+            background: none;
+            border: none;
+            text-decoration: none;
+            color: darkgray;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+        }
+        .dropdown.active + .link, .link:hover {
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            left: 0;
+            top: calc(100% + .25rem);
+            background-color: white;
+            padding: .75rem;
+            border-radius: .25rem;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.116);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+            transition: opacity 150ms ease-in-out, tranform 150ms ease-in-out;
+            columns: 2;
+            width: fit-content;
+        }
+
+        .dropdown.active > .link + .dropdown-menu {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .information-grid {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            gap: 2rem;
+            padding: 10px;
+        }
+
+        .dropdown-links {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>Information</button>
+            <div class="dropdown-menu Information grid">
+                <div class="dropdown-heading">Free Tutorial</div>
+                <div class="dropdown-links">
+                    <a href="#" class="link">All</a>
+                    <a href="#" class="link">latest</a>
+                    <a href="#" class="link">Popular</a>
+                </div>
+            </div> 
+            <div class="dropdown-heading">Courses</div>
+            <div class="dropdown-links">
+                <a href="#" class="link">Javascript</a>
+                <a href="#" class="link">CSS</a>
+                <a href="#" class="link">HTML</a>
+            </div>
+            <div class="dropdown-heading">Free Tutorial</div>
+            <div class="dropdown-links">
+                <a href="#" class="link">All</a>
+                <a href="#" class="link">latest</a>
+                <a href="#" class="link">Popular</a>
+            </div>   
+            <div class="dropdown-heading">Free Tutorial</div>
+            <div class="dropdown-links">
+                <a href="#" class="link">All</a>
+                <a href="#" class="link">latest</a>
+                <a href="#" class="link">Popular</a>
+            </div>
+        </div>
+        <div>
+        <a href="#" class="link">Pricing</a>
+        <button class="link" data-dropdown-button>Login</button>
+    </div>
+    <script>
+        document.addEventListener('click', e => {
+            const isDropdownButton = e.target.matches('[data-dropdown-button]')
+            if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+
+            let currentDropdown
+            if (isDropdownButton) {
+                currentDropdown = e.target.closest('[data-dropdown]')
+                currentDropdown.classList.toggle('active')
+            }
+
+            document.querySelectorAll('[data-dropdown].active').forEach(dropdown => {
+                if (dropdown === currentDropdown) return
+                dropdown.classList.remove('active')
+            })
+        })
+    </script>
+</body>
+</html>

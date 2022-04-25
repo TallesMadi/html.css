@@ -16,19 +16,36 @@
             background-color: red;
             height: 50%;
             width: 50%;
-            transition: transform 1s cubic-bezier(1,-0.01, 0.11, 1.01);
+            animation: left-to-right 1s ease-in forwards infinite alternate;
         }
 
         .parent:hover .child {
-            background-color: green;
-            transform: translateX(100%);
-            
+            animation-play-state: paused;
+        }
+
+        @keyframes left-to-right {
+            0% {
+                background-color: red;
+                transform: translateX(0);
+            }
+            33% {
+                background-color: #a00000;
+                transform: translateY(100%);
+            } 
+            67% {
+                background-color: #640000;
+                transform: translateX(100%) translateY(100%);
+            }
+            100% {
+                background-color: rgb(37, 0, 0);
+                transform: translateX(100%);
+            }
         }
     </style>
 </head>
 <body>
     <div class="parent">
         <div class="child"></div>
-    </div>
+    </div> 
 </body>
 </html>
