@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to top, lightblue, rgb(75, 187, 224));
+        }
+
+        .giro {
+            position: relative;
+            display: block;
+            margin: 30px auto 0px auto;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            border-radius: 25px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+            animation: giro 3s ease-in-out forwards infinite alternate;
+            overflow: inherit;
+        }
+
+        .dentro {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.253);
+            display: block;
+            margin: 30px auto;
+            background-color: white;
+            top: 55px;
+            left: 85px;
+        }
+
+        .giro:hover {
+            animation-play-state: paused;
+        }
+
+        .tronco {
+            height: 250px;
+            width: 35px;
+            background-color: chocolate;
+            margin: 0px auto;
+            display: block;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.301);
+        }
+
+        .base {
+            height: 159px;
+            width: auto;
+            margin: 0px auto;
+            background-image: linear-gradient(to bottom, green, chocolate);
+        }
+
+        @keyframes giro {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(0.5turn);
+                background-color: darkgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="giro">
+        <div class="dentro"></div>
+    </div>
+    <div class="tronco"></div>
+    <div class="base"></div>
+</body>
+</html>

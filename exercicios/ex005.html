@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.jump {
+            text-align: center;
+            background-color: lightcyan;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            animation: tran 1s linear forwards infinite alternate;
+        }
+
+        div.jump:hover {
+            animation-play-state: paused;
+        }
+
+        div.maior {
+            position: relative;
+            margin: 200px auto 10px auto;
+            width: 600px;
+            height: 25px;
+            background-color: grey;
+        }
+
+        div.menor {
+            position: absolute;
+            margin: 0px;
+            height: 25px;
+            width: 100%;
+            background-color: greenyellow;
+            animation: bar 3s ease-in-out forwards infinite alternate;
+        }
+
+        div.menor:hover {
+            animation-play-state: paused;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+        }
+        @keyframes tran {
+            0% {
+                transform: translateX(0);
+                transform: translateY(0);
+            }
+
+            33% {
+                transform: translateX(33%);
+                transform: translateY(33%);
+            }
+
+            67% {
+                transform: translateX(67%);
+                transform: translateY(67%);
+            }
+
+            100% {
+                transform: translateX(100%);
+                transform: translateY(100%);
+                background-color: darkcyan;
+            }
+        }
+
+        @keyframes bar {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="jump">
+        <h1>Bom Dia!</h1>
+    </div>
+    <div class="maior">
+        <div class="menor"></div>
+    </div>
+    <input type="button" value="Mudar Cor" onclick="clicar()">
+    <script>
+        function clicar() {
+            var bar = document.querySelector('div.menor')
+            if (bar.style.backgroundColor == 'red') {
+                bar.style.backgroundColor = 'yellowgreen'
+            }
+            else {
+                bar.style.backgroundColor = 'red'
+            }
+        }
+    </script>
+</body>
+</html>
