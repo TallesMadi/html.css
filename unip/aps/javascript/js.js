@@ -12,3 +12,10 @@ function lista() {
             lista.style.overflow = "inherit"
        }
    }
+
+function sair() {
+    var lista = window.document.querySelector('div#lista')
+    lista.style.height = "0"
+    lista.style.opacity = "0"
+    lista.style.overflow = "hidden"
+}

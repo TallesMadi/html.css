@@ -69,6 +69,7 @@ main p {
     text-align: justify;
     line-height: 1.2em;
     text-indent: 10px;
+    letter-spacing: 1px;
 }
 
 main a {

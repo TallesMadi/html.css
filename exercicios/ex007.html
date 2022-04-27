@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+
+        /*li.red ~ li {
+            background-color: red;
+        }
+        ~ = all siblings after
+        + = only one sibling after*/
+
+        input:focus {
+            background-color: red;
+        }
+
+        input:checked {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        /*li:nth-last-child(odd) {
+            background-color: aqua;
+        }*/
+
+        span:first-of-type {
+            background-color: blueviolet;
+        }
+
+        li:not(.red) {
+            background-color: green;
+        }
+
+        div.sein::before {
+            content: 'Puta';
+            background-color: firebrick;
+        }
+
+        div.sein::after {
+            content: 'Puta';
+            background-color: firebrick;
+        }
+
+        [data-cleber="true"] {
+            background-color: gold;
+            width: 200px;
+            height: 20px;
+        }
+
+        [data-cleber^='12'] {
+            background-color: gold;
+            width: 200px;
+            height: 20px;           
+        }
+        /* ^ = começa com...
+        $ = acaba com...
+        * = se tiver...em qualquer lugar*/
+    </style>
+</head>
+<body>
+    <div class="sein">Isso é uma div</div>
+    <span>Isso é um span</span>
+    <ul>
+        <li class="red">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <input type="checkbox" name="sergio" id="sergio">
+    <div data-cleber="12"></div>
+</body>
+</html>
