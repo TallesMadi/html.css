@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default</title>
+    <style>
+
+        .roll {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(red, firebrick);
+            border-radius: 50%;
+            display: block;
+            margin: 50px 10px 0px 10px;
+            animation: giro 3s ease-in-out infinite forwards alternate;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.274);
+            position: relative;
+            overflow: inherit;
+        }
+
+        .roll:hover {
+            animation-play-state: paused;
+        }
+
+        .miolo {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-image: radial-gradient(darkorange, orange);
+            bottom: 80px;
+            right: 60px;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.322);
+        }
+
+        .chao {
+            height: 200px;
+            background-image: linear-gradient(to top, gray, darkgray);
+            display: block;
+            margin: 0px auto;
+        }
+
+        @keyframes giro {
+            0% {
+                transform: rotate(0) translateX(0) translateY(0);
+            }
+
+            100% {
+                transform: translateX(250%) rotate(180deg) translateY(0) ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="roll">
+        <div class="miolo"></div>
+    </div>
+    <div class="chao"></div>
+</body>
+</html>
