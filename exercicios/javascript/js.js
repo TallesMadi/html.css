@@ -78,14 +78,24 @@ function clicar2() {
 }
 function clicar3() {
     let lista = window.document.querySelector('input#lista')
-    let num1 = Math.floor(Math.random() * 4)
-    let num = 0
-    num += num1
+    let num = Math.floor(Math.random() * 4)
     let pp = window.document.querySelector('p.hp')
     let pa= window.document.querySelector('p.ataque')
     let mov = window.document.querySelector('div.mov')
     pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
-    lista.style.opacity = 0
+    lista.style.opacity = 0    
+    if (num == 1) {
+        me = me + 50
+        pa.innerHTML = `Você encontrou uma poção de vida! Que sorte!`
+        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
+    } else if (num == 2) {
+        me = me - 50 
+        pa.innerHTML = `Você encontrou Veneno! Azarado KKKKK!`
+        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
+    } else {
+        pa.innerHTML = `Você encontrou a coisa mais legal e divertida que eu já vi em toda a minha vida! <strong>Nada</strong> <br> Seu otário!`
+        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
+    }
     if (boss <= 0 && me <= 0) {
         let fim = window.document.querySelector('p.fim')
         mov.innerHTML = ``
@@ -103,16 +113,5 @@ function clicar3() {
         pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: 0`
         fim.innerHTML += 'Tu é um merda mesmo hein? Tu morreu, meus parabéns! <br> GAME OVER!'
     }   
-    if (num = 1) {
-        me = me + 50
-        pa.innerHTML = `Você encontrou uma poção de vida! Que sorte!`
-        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
-    } else if (num = 2) {
-        me = me - 50 
-        pa.innerHTML = `Você encontrou Veneno! Azarado KKKKK!`
-        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
-    } else if (num = 3) {
-        pa.innerHTML = `Você encontrou a coisa mais legal e divertida que eu já vi em toda a minha vida! Nada <br> Seu otário!`
-        pp.innerHTML = ` <br> Boss HP: ${boss} <br> Sua HP: ${me}`
-    }
+
 }
