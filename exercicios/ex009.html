@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Masmorras</h1>
+    <p>Você entrou em uma caverna escura. <br> Você encontra uma tocha, a acende e a leva consigo. <br> Você encontra uma bifurcação em sua frente.<br> Para onde deseja seguir: 
+    </p>
+    <p class="hp"></p>
+    <p class="ataque"></p>
+    <div class="apague">
+        <input type="button" value="Leste" onclick="clicar()" class="botao"> 
+        <input type="button" value="Oeste" class="botao" onclick="clicarb()">
+    </div>
+    <div class="mov">
+        <input type="button" value="Ataque Leve" onclick="clicar1()" class="botao">
+        <input type="button" value="Ataque Pesado" onclick="clicar2()" class="botao">
+        <input type="button" value="Procurar itens" onclick="clicar3()" class="botao" id="lista">
+    </div>
+    <p class="fim"></p>
+<script src="javascript/js.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: yellowgreen;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p {
+    color: yellowgreen;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}
+
+div.apague {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+input.botao {
+    background-color: yellowgreen;
+    color: black;
+    padding: 3px;
+    margin: block;
+    margin: auto auto auto 30px;
+    cursor: pointer;
+}
+
+input.botao:hover {
+    background-color: rgb(133, 184, 31);
+    text-decoration: underline;
+}
+
+div.mov {
+    text-align: center;
+    opacity: 0;
+}
