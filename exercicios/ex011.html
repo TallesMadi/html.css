@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,74 @@
         body {
             margin: 0;
             padding: 0;
+            height: 1000px;
+            background-color: cadetblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
-            background-color: gray;
+            background-color: #203636;
             padding: 5px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
         }
 
         a {
-            color: white;
+            color: whitesmoke;
             text-decoration: none;
             padding: 10px;
             border-radius: 5px;
         }
 
         a:hover {
-            background-color: rgb(83, 83, 83);
+            background-color: rgb(49, 69, 73);
             font-weight: bold;
+        }
+
+        header {
+            background-color: #203636;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+        }
+
+        header h1 {
+            color: whitesmoke;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.288);
+        }
+
+        main {
+            background-color: whitesmoke;
+            margin: auto;
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+        }
+
+        main h2 {
+            text-align: left;
+            background-image: linear-gradient(to right, cadetblue, whitesmoke);
+            padding: 5px;
+            color: whitesmoke;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.301);
+        }
+
+        main p {
+            text-indent: 10px;
+            font-size: 12pt;
+            line-height: 1.2em;
+        }
+        main article {
+            margin: 8px auto;
+            padding: 1px;
+        }
+        @media (min-width: 800px) {
+            main p {
+                font-size: 14pt;
+            }
         }
     </style>
 </head>
@@ -36,5 +86,30 @@
         <a href="#">Exemplo2</a>
         <a href="#">Exemplo3</a>
     </nav>
+    <header>
+        <h1>Exemplo Grande</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Exemplinho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit fuga fugit dicta mollitia blanditiis provident tempora, excepturi deleniti aperiam repellat laudantium doloribus at voluptatem animi facere quas incidunt enim.</p>
+        </article>
+        <article>
+            <h2>Exemplinho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit fuga fugit dicta mollitia blanditiis provident tempora, excepturi deleniti aperiam repellat laudantium doloribus at voluptatem animi facere quas incidunt enim.</p>
+        </article>
+        <article>
+            <h2>Exemplinho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit fuga fugit dicta mollitia blanditiis provident tempora, excepturi deleniti aperiam repellat laudantium doloribus at voluptatem animi facere quas incidunt enim.</p>
+        </article>
+        <article>
+            <h2>Exemplinho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit fuga fugit dicta mollitia blanditiis provident tempora, excepturi deleniti aperiam repellat laudantium doloribus at voluptatem animi facere quas incidunt enim.</p>
+        </article>
+        <article>
+            <h2>Exemplinho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit fuga fugit dicta mollitia blanditiis provident tempora, excepturi deleniti aperiam repellat laudantium doloribus at voluptatem animi facere quas incidunt enim.</p>
+        </article>
+    </main>
 </body>
 </html>
