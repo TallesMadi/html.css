@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trabalho</title>
+    <style>
+        @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+:root {
+    --cor1: #014023;
+    --cor2: #02731E;
+    --cor3: #006435;
+    --cor4: #495073;
+    --cor5: #3E3455;
+    --corfundo: #59b46f;
+    --corfundo2: #7DA152;
+}
+
+body {
+    background-color: var(--corfundo2);
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0px auto;
+    padding: 10px 0px;
+    color: white;
+    background: green url('imagem/vinhas.m.jpg') center center no-repeat scroll;
+    background-size: cover;
+    height: 270px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 10px 50px 10px 10px;
+    display: flex;
+    margin: 50px;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, #43542f88, transparent);
+    height: fit-content;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+nav {
+    padding: 5px;
+    margin: 0px auto ;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    display: block;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.199);
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+h2.top {
+    text-align: center;
+    text-decoration: underline;
+}
+h2 {
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    padding: 5px 0px 5px 10px;
+    color: white;
+    padding-left: 20px;
+}
+
+h1, h2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+}
+main p {
+    text-align: justify;
+    line-height: 1.2em;
+    text-indent: 10px;
+    letter-spacing: 1px;
+}
+
+main a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0px;
+}
+
+div#lista {
+    margin: -3px auto 0px auto;
+    text-align: left;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor5));
+    width: 30%;
+    height: fit-content;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    display: block;
+    position: absolute;
+    border-radius: 0px 0px 7.5px 7.5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
+    top: 58px;
+    left: 0;
+}
+
+div.foto {
+    background: green url('imagem/campo.jpg') center center no-repeat scroll;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    max-width: 750px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
+}
+
+input#botao {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 6px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+#botao:hover {
+    background-color: var(--corfundo2);
+}
+ul {
+    text-align: left;
+    padding: 10px;
+    list-style: none;
+}
+
+li {
+    list-style-position: inside;
+    padding: 15px 5px;
+    margin: 5px;
+    color: white;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 650px) {
+    input#botao {
+        font-size: 27px;
+    }
+    li {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 50px;
+    }
+    div#lista {
+        top: 295px;
+        top: 61px
+    }
+    nav {
+        position: relative;
+        top: 0;
+    }
+}
+@media (min-width: 900px) {
+    header {
+        background:green url('imagem/vinhas.g.jpg') bottom bottom no-repeat scroll;
+        background-size: cover;
+    }
+}
+
+    </style>
+</head>
+<body>  
+    <nav>
+            <input type="button" value="&#9776;" onclick="lista()" id="botao">
+            <div id="lista">
+                <ul>
+                    <li><a href="@" target="_blank" rel="nofollow">Termo1</a></li>
+                    <li><a href="@" target="_blank" rel="nofollow">Termo2</a></li>
+                    <li><a href="@" target="_blank" rel="nofollow">Termo3</a></li>
+                    <li><a href="@" target="_blank" rel="nofollow">Termo4</a></li>
+                </ul>
+            </div>
+        </nav>
+    <header>
+        <h1>Trabalho</h1>
+      
+    </header>
+    <main onclick="sair()">
+        <h2 class="top">Índice</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dolorum quas placeat animi, reiciendis debitis reprehenderit optio magni officia, ipsam, corporis accusantium officiis ullam fugit voluptatem. Ex, molestiae. Accusamus, perspiciatis?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam blanditiis fuga quae facere deserunt necessitatibus, fugiat labore voluptatum asperiores voluptas numquam tempore quos? Doloribus, officiis blanditiis. Alias, aut neque.</p>
+        <article>
+            <section>
+                <h2>Exemplo 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta itaque veritatis, exercitationem, quae commodi iste error nisi hic, a architecto similique! Repellendus nihil quos vitae eveniet, voluptas temporibus laborum assumenda! <br> <a href="@">Clique aqui.</a></p>
+                <picture>
+                    <div class="foto"><a href="@"></a></div>
+                </picture>
+            </section>
+            <section>
+                <h2>Exemplo 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta itaque veritatis, exercitationem, quae commodi iste error nisi hic, a architecto similique! Repellendus nihil quos vitae eveniet, voluptas temporibus laborum assumenda! <br> <a href="@">Clique aqui.</a></p>
+                <picture>
+                    <div class="foto"><a href="@"></a></div>
+                </picture>
+            </section>
+            <section>
+                <h2>Exemplo 3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta itaque veritatis, exercitationem, quae commodi iste error nisi hic, a architecto similique! Repellendus nihil quos vitae eveniet, voluptas temporibus laborum assumenda! <br> <a href="@">Clique aqui.</a></p>
+                <picture>
+                    <div class="foto"><a href="@"></a></div>
+                </picture>
+            </section>
+            <section>
+                <h2>Exemplo 4</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta itaque veritatis, exercitationem, quae commodi iste error nisi hic, a architecto similique! Repellendus nihil quos vitae eveniet, voluptas temporibus laborum assumenda! <br> <a href="@">Clique aqui.</a></p>
+                <picture>
+                    <div class="foto"><a href="@"></a></div>
+                </picture>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&#169; 2022 TRABALHO APS UNIP - SÃO JOSÉ DO RIO PRETO</p>
+    </footer>
+    <script>
+        function lista() {
+    var lista = window.document.querySelector('div#lista')
+       
+       if (lista.style.overflow == "inherit") {
+           lista.style.height = "0"
+           lista.style.opacity = "0"
+           lista.style.overflow = "hidden"
+           
+       } else {
+            lista.style.height = "fit-content"
+            lista.style.opacity = "1"
+            lista.style.overflow = "inherit"
+       }
+   }
+
+function sair() {
+    var lista = window.document.querySelector('div#lista')
+    lista.style.height = "0"
+    lista.style.opacity = "0"
+    lista.style.overflow = "hidden"
+}
+    </script>
+</body>
+</html>
