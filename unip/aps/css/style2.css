@@ -37,7 +37,7 @@ header h1 {
     display: flex;
     margin: 50px 10px;
     color: var(--cor5);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.493), transparent);
+    background-image: linear-gradient(to right, #ffffff8f, transparent);
     height: fit-content;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
 }
@@ -191,7 +191,6 @@ footer {
     }
     header h1 {
         font-size: 55px;
-        margin-left: 100px;
     }
     div#lista {
         top: 295px;
@@ -202,6 +201,12 @@ footer {
         top: 0;
     }
 }
+
+@media (min-width: 722px) {
+    header h1 {
+        margin-left: 100px;
+    }
+} 
 
 @media (min-width: 900px) {
     header {

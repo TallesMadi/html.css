@@ -139,4 +139,8 @@ footer p {
     body {
         height: 95vh;
     }
+
+    img {
+        width: 120px;
+    }
 }
