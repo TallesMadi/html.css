@@ -16,7 +16,7 @@ body::after {
     content: "";
     background: rgba(210, 105, 30, 0.26) url('../imagem/vinho.jpg') center center no-repeat fixed;
     background-size: cover;
-    opacity: 0.5;
+    animation: fundo 2s ease-in-out forwards alternate;
     top: 0;
     left: 0;
     bottom: 0;
@@ -34,7 +34,7 @@ div.pad {
 main {
     background-color: white;
     padding: 20px;
-    opacity: 0.9;
+    opacity: 0;
     max-width: 800px;
     height: fit-content;
     text-align: justify;
@@ -43,12 +43,13 @@ main {
     color: #3E3455;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.219);
+    animation: principal 2s ease-in-out 1s forwards alternate;
 }
 
 main h1 {
     font-size: 60px;
     margin: 1em 1em 0px 0px;
-    animation: titulo 2s ease-in-out 1s forwards alternate;
+    animation: titulo 2s ease-in-out 2s forwards alternate;
     opacity: 0;
 }
 
@@ -56,7 +57,7 @@ main p {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 30px;
-    animation: titulo 2s ease-in-out 2s forwards alternate;
+    animation: titulo 2s ease-in-out 3s forwards alternate;
     opacity: 0;
 }
 
@@ -81,7 +82,7 @@ div.foto {
     top: 0;
     right: 0;
     margin: 0px 0px 0px 50px;
-    animation: titulo 2s ease-in-out 3.5s forwards alternate;
+    animation: titulo 2s ease-in-out 4s forwards alternate;
     opacity: 0;
 }
 
@@ -107,6 +108,26 @@ footer p {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fundo {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes principal {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.9;
     }
 }
 
@@ -142,5 +163,6 @@ footer p {
 
     img {
         width: 120px;
+        height: 200px;
     }
 }
