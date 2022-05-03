@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <title>Viticultura</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Oswald', sans-serif;
+            align-content: center;
+        }
+
+        body::after {
+            content: "";
+            background: rgba(210, 105, 30, 0.26) url('imagem/vinho.jpg') center center no-repeat fixed;
+            background-size: cover;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        div.pad {
+            display: block;
+            width: 20px;
+            height: 100px;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            opacity: 0.9;
+            max-width: 800px;
+            height: fit-content;
+            text-align: justify;
+            position: relative;
+            margin: auto;
+            margin-bottom: 30px;
+            color: #3E3455;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.219);
+        }
+
+        main h1 {
+            font-size: 60px;
+            margin: 1em 1em 0px 0px;
+            animation: titulo 2s ease-in-out 1s forwards alternate;
+            opacity: 0;
+        }
+
+        main p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 30px;
+            animation: titulo 2s ease-in-out 2s forwards alternate;
+            opacity: 0;
+        }
+
+        main p.clique {
+            margin: 0px 1em 1em 0px;
+        }
+
+        main a {
+            color: #624c97;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        div.foto {
+            height: fit-content;
+            width: fit-content;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0px 0px 0px 50px;
+            animation: titulo 2s ease-in-out 3.5s forwards alternate;
+            opacity: 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100vw;
+            margin: 0px auto;
+        }
+
+        footer p {
+            text-align: center;
+            background-image: linear-gradient(to bottom, #495073, #3E3455);
+            padding: 12.5px;
+            color: white;
+            margin: 0;
+        }
+
+        @keyframes titulo {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @media (min-width: 720px) {
+            main h1 {
+                font-size: 80px;
+                margin: 20px 1em 0px 20px;
+            }
+
+            main p {
+                font-size: 50;
+            }
+
+            main p.clique {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            img {
+                width: 150px;
+            }
+        }
+
+        @media (orientation: portrait) {
+            div.pad {
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pad"></div>
+        <main>
+            <h1>Viticultura: </h1>
+            <p>Tudo o que você precisa saber <br> sobre o plantio da uva!</p>
+            <div class="foto"><img src="imagem/uvona.resize.png" alt="uva"></div>
+            <p class="clique"><a href="teste2.html" target="_self" rel="next">Clique aqui</a> para saber mais!</p>
+        </main>
+    
+    <footer><p>&#169; TRABALHO APS UNIP 2022. <br> Imagens livres de direitos autorais</p></footer>
+</body>
+</html>
