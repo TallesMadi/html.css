@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Trabalho</title>
     <style>
-        @charset "utf-8";
+@charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
     --cor1: #014023;
@@ -26,7 +26,7 @@ body {
     background-color: var(--corfundo2);
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 45px;
     padding: 10px 50px 10px 10px;
     display: flex;
     margin: 50px;
@@ -61,6 +61,15 @@ nav {
     position: sticky;
     top: 0;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.199);
+}
+
+nav h1{
+    color: white;
+    display: inline-flex;
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    padding-left: 1em;
 }
 
 main {
@@ -82,7 +91,6 @@ h2 {
 }
 
 h1, h2 {
-    font-family: 'Fira Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
 }
 main p {
@@ -118,7 +126,7 @@ div#lista {
     display: block;
     position: absolute;
     border-radius: 0px 0px 7.5px 7.5px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
     top: 58px;
     left: 0;
 }
@@ -131,7 +139,7 @@ div.foto {
     max-width: 750px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
 }
 
 input#botao {
@@ -143,6 +151,7 @@ input#botao {
     position: relative;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    border-radius: 4px;
 }
 #botao:hover {
     background-color: var(--corfundo2);
@@ -186,7 +195,7 @@ footer {
         font-size: 20px;
     }
     header h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
     div#lista {
         top: 295px;
@@ -208,16 +217,17 @@ footer {
 </head>
 <body>  
     <nav>
-            <input type="button" value="&#9776;" onclick="lista()" id="botao">
-            <div id="lista">
-                <ul>
-                    <li><a href="@" target="_blank" rel="nofollow">Termo1</a></li>
-                    <li><a href="@" target="_blank" rel="nofollow">Termo2</a></li>
-                    <li><a href="@" target="_blank" rel="nofollow">Termo3</a></li>
-                    <li><a href="@" target="_blank" rel="nofollow">Termo4</a></li>
-                </ul>
-            </div>
-        </nav>
+        <input type="button" value="&#9776;" onclick="lista()" id="botao">
+        <h1>Trabalho</h1>
+        <div id="lista">
+            <ul>
+                <li><a href="@" target="_blank" rel="nofollow">Termo1</a></li>
+                <li><a href="@" target="_blank" rel="nofollow">Termo2</a></li>
+                <li><a href="@" target="_blank" rel="nofollow">Termo3</a></li>
+                <li><a href="@" target="_blank" rel="nofollow">Termo4</a></li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <h1>Trabalho</h1>
       
@@ -259,7 +269,7 @@ footer {
         </article>
     </main>
     <footer>
-        <p>&#169; 2022 TRABALHO APS UNIP - SÃO JOSÉ DO RIO PRETO</p>
+        <p>&#169; TRABALHO APS UNIP 2022</p>
     </footer>
     <script>
         function lista() {
