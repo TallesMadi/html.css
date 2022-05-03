@@ -132,8 +132,8 @@ footer p {
     }
 }
 
-@media (orientation: portrait) {
+@media (max-width: 420px) {
     div.pad {
-        height: 100px;
+        height: 200px;
     }
 }
