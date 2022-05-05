@@ -92,7 +92,7 @@ main p {
 }
 
 main a {
-    color: black;
+    color: var(--cor2);
     text-decoration: none;
     font-weight: bold;
 }
@@ -196,25 +196,29 @@ footer {
     input#botao {
         font-size: 27px;
     }
+
     li {
         font-size: 20px;
     }
+
     header h1 {
         font-size: 55px;
     }
+
     div#lista {
         top: 295px;
         top: 61px
-    }
-    nav {
-        position: relative;
-        top: 0;
     }
 }
 
 @media (min-width: 722px) {
     header h1 {
         margin-left: 100px;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
     }
 } 
 
