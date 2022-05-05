@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões Chiques</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        button {
+            margin: 1rem;
+        }
+
+        .btn {
+            background-color: var(--background-color);
+            color: #222;
+            padding: .5em 1em;
+            border: none;
+            outline: none;
+            position: relative;
+            cursor: pointer;
+
+            --background-color: #ddd;
+            --border-size: 2px;
+            --cor1: #0af;
+        }
+
+        .btn-border-pop::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border:  var(--border-size) solid var(--background-color);
+            transition: top, left, right, bottom, 150ms ease-in-out;
+        }
+
+        .btn-border-pop:hover::before, .btn-border-pop:focus::before {
+            top: calc(var(--border-size) * -2);            right: calc(var(--border-size) * -2);
+            bottom: calc(var(--border-size) * -2);
+            left: calc(var(--border-size) * -2);
+        }
+
+        .btn-background-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background-color: var(--cor1);
+            transition: transform 300ms ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .btn-background-slide:hover::before, .btn-background-slide:focus::before{
+            transform: scaleX(1);
+        }
+
+        .btn-background-slide {
+            transition: color 300ms ease-in-out;
+            z-index: 1;
+        }
+
+        .btn-background-slide:hover, .btn-background-slide:focus  {
+            z-index: 1;
+            color: white;
+        }
+
+        .btn-background-circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 50%;
+            transform: scale(1.5);
+            transition: transform 500ms ease-in-out;
+            background-color: var(--background-color);
+        }
+
+        .btn-background-circle:hover:before, .btn-background-circle:focus:before {
+            transform: scale(0);
+            color: white;
+        }
+
+        .btn-background-circle {
+            z-index: 1;
+            overflow: hidden;
+            background-color: var(--cor1);
+            transition: color 500ms ease-in-out;
+        }
+
+        .btn-background-circle:hover, .btn-background-circle:focus {
+            color: white;
+        }
+
+        .btn-border-underline::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: var(--border-size);
+            background-color: var(--cor1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 300ms ease-in-out;
+        }
+
+        .btn-border-underline:hover::before, .btn-border-underline:focus::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-border-pop">Border Pop</button>
+    <button class="btn btn-background-slide">Background Slide</button>
+    <button class="btn btn-background-circle">Background Circle</button>
+    <button class="btn btn-border-underline">Border Underline</button>
+</body>
+</html>

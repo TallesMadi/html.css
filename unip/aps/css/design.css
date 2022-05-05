@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 
+:root {
+    --cor1:#3E3455;
+    --corlink: #624c97;
+    --corhover: #9a78e9;
+    --corbackground1: #495073;
+    --corbackground2: #3E3455;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,7 +48,7 @@ main {
     text-align: justify;
     position: relative;
     margin: auto;
-    color: #3E3455;
+    color: var(--cor1);
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.219);
     animation: principal 2s ease-in-out 1s forwards alternate;
@@ -66,13 +74,15 @@ main p.clique {
 }
 
 main a {
-    color: #624c97;
+    color: var(--corlink);
     text-decoration: none;
     font-weight: bold;
+    transition: all 300ms ease-in-out;
 }
 
 main a:hover {
     text-decoration: underline;
+    color: var(--corhover);
 }
 
 div.foto {
@@ -94,8 +104,9 @@ footer {
 }
 
 footer p {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-image: linear-gradient(to bottom, #495073, #3E3455);
+    background-image: linear-gradient(to bottom, var(--corbackground1), var(--corbackground2));
     padding: 12.5px;
     color: white;
     margin: 0;

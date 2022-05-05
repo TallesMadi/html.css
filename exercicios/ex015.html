@@ -18,12 +18,44 @@
             margin: 0;
             background: radial-gradient(#9d5900, #3d2200);
         }
+
+        .titulo {
+            color: #ff6d00;
+            text-align: center;
+            font-size: 6em;
+        }
+
+        .game-info-container {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .game-info {
+            color: #ffbb89;
+            font-size: 4em;
+        }
+
+        .container {
+           display: grid;
+           grid-template-columns: repeat(4, auto); 
+           grid-gap: 10px;
+           margin: 50px;
+           justify-content: center;
+        }
+
+        .card {
+            background-color: black;
+            height: 175px;
+            width: 125px ;
+           border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <h1 class="titulo">Jogo da Memória</h1>
     <div class="container">
-        <div class="info">
+        <div class="game-info-container">
             <div class="game-info">
                 Tempo <span id="tempo">100</span>
             </div>
@@ -31,6 +63,25 @@
                 Cartas Viradas <span id="flips">0</span>
             </div>
         </div>
+        <div class="card">
+            <div class="card-back card-face"></div>
+            <div class="card-front card-face"></div>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
     </div>
 </body>
 </html>
