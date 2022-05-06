@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .game {
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .character {
+            width: 20px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            top: 150px;
+        }
+        .animate {
+            animation: jump 500ms ease-in-out;
+        }
+
+        .block {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            position: relative;
+            top: 130px;
+            left: 480px;
+            animation: block 2s linear infinite;
+        }
+
+        @keyframes block {
+            0% {
+                left: 480px;
+            }
+
+            100% {
+                left: -480px;
+            }
+        }
+
+        @keyframes jump {
+            0% {
+                top: 150px;
+            }
+
+            33% {
+                top: 100px
+            }
+
+            67% {
+                top: 100px;
+            }
+            100% {
+                top: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <div class="character"></div>
+        <div class="block"></div>
+    </div>
+    <script>
+        var character = document.querySelector('div.character')
+        var block = document.querySelector('div.block')
+        function jump() {
+            if (character.classList != 'animate') {
+                character.classList.add('animate')
+            }
+            setTimeout(function() {
+                character.classList.remove('animate')
+            }, 500)
+        }
+        var checkdead = setInterval(function() {
+            var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'))
+            var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'))
+            if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
+                block.style.animation = 'none'
+                block.style.display = 'none'
+                alert('GAME OVER')
+            }
+        }, 10)
+    </script>
+</body>
+</html>
