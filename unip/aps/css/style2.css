@@ -189,6 +189,8 @@ input.btn:hover {
 legend {
     font-size: 10px;
     text-align: center;
+    margin: auto;
+    display: inline;
 }
 
 abbr {
@@ -255,6 +257,10 @@ footer {
 @media (orientation: portrait) {
     div#lista {
         width: 44%;
+    }
+
+    legend {
+        font-size: 6.5px;
     }
 }
 
