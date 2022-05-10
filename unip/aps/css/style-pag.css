@@ -90,7 +90,7 @@ main p {
     line-height: 1.2em;
     text-indent: 10px;
     letter-spacing: 1px;
-    font-size: var(--tamanho);
+   font-size: var(--tamanho);
 }
 
 main a {
@@ -137,53 +137,9 @@ div#lista {
 div.foto {
     margin: auto;
     max-width: 750px;
-    height: 350px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
-}
-
-div.cultivo {
-    background: var(--cor1) url('../imagem/campo.jpg') center center no-repeat scroll;
-    background-size: cover;
-}
-
-div.plantio {
-    background: var(--cor1) url('../imagem/plantio.uva.jpg') center center no-repeat scroll;
-    background-size: cover;
-}
-
-div.clima {
-    background: var(--cor1) url('../imagem/solo.jpg') center center no-repeat scroll;
-    background-size: cover;
-}
-
-div.doenca {
-    background: var(--cor1) url('../imagem/praga.jpg') center center no-repeat scroll;
-    background-size: cover;
-}
-
-div.comercio {
-    background: var(--cor1) url('../imagem/comercio.jpg') center center no-repeat scroll;
-    background-size: cover;
-}
-
-label {
-    font-weight: bold;
-    padding: 5px;
-    border: 2px solid var(--cor2);
-}
-
-input.btn {
-    background-color: var(--cor1);
-    color: white;
-    cursor: pointer;
-    margin: 3px;
-    transition: all 300ms ease-in-out;
-}
-
-input.btn:hover {
-    font-weight: bold;
-    background-color: var(--cor2);
 }
 
 legend {
@@ -209,6 +165,25 @@ input#botao {
 
 #botao:hover {
     background-color: var(--corfundo2);
+}
+
+label {
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid var(--cor2);
+}
+
+input.btn {
+    background-color: var(--cor1);
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+    transition: all 300ms ease-in-out;
+}
+
+input.btn:hover {
+    font-weight: bold;
+    background-color: var(--cor2);
 }
 
 nav ul {
