@@ -167,13 +167,13 @@ div.comercio {
     background-size: cover;
 }
 
-label {
+main label {
     font-weight: bold;
     padding: 5px;
     border: 2px solid var(--cor2);
 }
 
-input.btn {
+main input.btn {
     background-color: var(--cor1);
     color: white;
     cursor: pointer;
