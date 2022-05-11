@@ -98,6 +98,7 @@ main p {
     line-height: 1.2em;
     text-indent: 10px;
     letter-spacing: 1px;
+    padding: 10px;
     font-size: var(--tamanho);
 }
 

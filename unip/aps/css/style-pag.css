@@ -92,6 +92,12 @@ h1, h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
 }
 
+h3 {
+    color: var(--cor2);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.151);
+    margin: 5px 10px;
+}
+
 main p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
@@ -99,6 +105,7 @@ main p {
     text-indent: 10px;
     letter-spacing: 1px;
    font-size: var(--tamanho);
+   padding: 10px;
 }
 
 main a {
@@ -148,6 +155,85 @@ div.foto {
     height: 300px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+div.italia {
+    background: var(--corfundo2) url('../imagem/uva-italia.jpg') center center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.globe {
+    background: var(--corfundo2) url('../imagem/uva-redglobe.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.brasil {
+    background: var(--corfundo2) url('../imagem/uva-brasil.jpg') center center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.superior {
+    background: var(--corfundo2) url('../imagem/uva-superior.jpg') center center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.crimson {
+    background: var(--corfundo2) url('../imagem/uva-crimson.jpg') center center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.thompsom {
+    background: var(--corfundo2) url('../imagem/uva-thompsom.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.armazenamento {
+    background: var(--corfundo2) url('../imagem/uva-armazenamento.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);}
+
+div.colheita {
+    background: var(--corfundo2) url('../imagem/uva-colheita.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
 }
 
 legend {
