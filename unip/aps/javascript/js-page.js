@@ -5,21 +5,21 @@ let tam4 = document.getElementsByClassName('big')[3]
 let tam5 = document.getElementsByClassName('big')[4]
 let tam6 = document.getElementsByClassName('big')[5]
 function clique1() {
-    tam1.style.fontSize = `18px`
-    tam2.style.fontSize = `18px`
-    tam3.style.fontSize = `18px`
-    tam4.style.fontSize = `18px`
-    tam5.style.fontSize = `18px`
-    tam6.style.fontSize = `18px`
-}
-
-function clique2() {
     tam1.style.fontSize = `20px`
     tam2.style.fontSize = `20px`
     tam3.style.fontSize = `20px`
     tam4.style.fontSize = `20px`
     tam5.style.fontSize = `20px`
     tam6.style.fontSize = `20px`
+}
+
+function clique2() {
+    tam1.style.fontSize = `24px`
+    tam2.style.fontSize = `24px`
+    tam3.style.fontSize = `24px`
+    tam4.style.fontSize = `24px`
+    tam5.style.fontSize = `24px`
+    tam6.style.fontSize = `24px`
 }
 
 function clique3() {
