@@ -94,7 +94,7 @@ h1, h2 {
 
 h3 {
     color: var(--cor2);
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.151);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.096);
     margin: 5px 10px;
 }
 
@@ -236,9 +236,60 @@ div.colheita {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
 }
 
+div.praga1 {
+    background: var(--corfundo2) url('../imagem/praga1.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.praga2 {
+    background: var(--corfundo2) url('../imagem/praga2.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.praga3 {
+    background: var(--corfundo2) url('../imagem/praga3.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 270px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.fungo1 {
+    background: var(--corfundo2) url('../imagem/fungo1.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.fungo2 {
+    background: var(--corfundo2) url('../imagem/fungo2.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
 legend {
     font-size: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 abbr {
