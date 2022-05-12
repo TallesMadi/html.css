@@ -286,6 +286,26 @@ div.fungo2 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
 }
 
+div.fungo3 {
+    background: var(--corfundo2) url('../imagem/fungo3.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.fungo4 {
+    background: var(--corfundo2) url('../imagem/fungo4.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
 legend {
     font-size: 10px;
     text-align: center;
