@@ -312,6 +312,17 @@ legend {
     margin-bottom: 10px;
 }
 
+legend a {
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+    transition: all 300ms ease-in-out;
+}
+
+legend a:hover {
+    font-weight: bold;
+}
+
 abbr {
     text-decoration: none;
 }
