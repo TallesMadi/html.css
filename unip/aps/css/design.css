@@ -59,6 +59,7 @@ main h1 {
     margin: 1em 1em 0px 0px;
     animation: titulo 2s ease-in-out 2s forwards alternate;
     opacity: 0;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
 }
 
 main p {
