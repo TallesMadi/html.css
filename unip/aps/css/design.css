@@ -15,7 +15,7 @@ body {
     padding: 0;
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Oswald', sans-serif;
     align-content: center;
 }
@@ -179,10 +179,6 @@ footer a:hover {
 @media (max-width: 420px) {
     div.pad {
         height: 160px;
-    }
-
-    body {
-        min-height: 98vh;
     }
 }
 
