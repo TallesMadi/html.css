@@ -40,7 +40,7 @@ div.pad {
 }
 
 main {
-    background-image: linear-gradient(to top right, white, #c8bde4);
+    background-image: linear-gradient(to top right, white, rgb(248, 243, 252));
     padding: 20px;
     opacity: 0;
     max-width: 800px;
