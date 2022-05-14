@@ -92,7 +92,7 @@ div.foto {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0px 0px 0px 50px;
+    margin: 10px 10px 0px 50px;
     animation: titulo 2s ease-in-out 4.5s forwards alternate;
     opacity: 0;
 }
