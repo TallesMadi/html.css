@@ -184,9 +184,16 @@ footer a:hover {
     body {
         min-height: 95vh;
     }
+}
 
+@media (max-width: 460px) {
     img {
         width: 120px;
-        height: 200px;
+        height: 150px;
+        transform: rotate(0.85turn);
+    }
+
+    div.foto {
+        top: 3%;
     }
 }
