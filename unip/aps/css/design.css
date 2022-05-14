@@ -184,12 +184,13 @@ footer a:hover {
 
 @media (max-width: 460px) {
     img {
-        width: 120px;
+        width: 100px;
         height: 150px;
-        transform: rotate(0.85turn);
     }
+}
 
-    div.foto {
-        top: 3%;
+@media (max-width: 390px) {
+    img {
+        opacity: 0;
     }
 }
