@@ -40,7 +40,7 @@ div.pad {
 }
 
 main {
-    background-image: linear-gradient(to top right, white, rgb(248, 243, 252));
+    background-color: white;
     padding: 20px;
     opacity: 0;
     max-width: 800px;
@@ -182,7 +182,7 @@ footer a:hover {
     }
 
     body {
-        min-height: 95vh;
+        min-height: 98vh;
     }
 }
 
