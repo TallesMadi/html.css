@@ -47,6 +47,7 @@ nav {
     display: block;
     height: fit-content;
     position: sticky;
+    overflow: hidden;
     top: 0;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.199);
 }
@@ -304,6 +305,42 @@ div.fungo4 {
     height: 350px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.solo1 {
+    background: var(--corfundo2) url('../imagem/solo1.jpg') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.solo2 {
+    background: var(--corfundo2) url('../imagem/solo2.png') top center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+    max-width: 550px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -15px 30px -15px;
+    height: 400px;
+    max-width: 1030px;
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 legend {
