@@ -28,40 +28,39 @@
             top: 10%;
             right: 37%;
             z-index: 2;
-            height: 200px;
-            width: 200px;
+            height: 250px;
+            width: 300px;
             background-color: lightslategray;
-            animation: uau 1.5s ease-in-out forwards alternate;
-            opacity: 0;
+            padding: 10px;
+            text-align: justify;
         }
 
         div.down {
             z-index: 0;
             position: absolute;
             top: 17.5%;
-            right: 30%;
+            right: 2%;
             height: 400px;
-            width: 200px;
+            width: 400px;
             background-color: lightgreen;
-            animation: uau 1.5s ease-in-out 1s forwards alternate;
-            opacity: 0;
+            columns: 2;
+            padding: 10px;
         }
 
-        @keyframes uau {
-            0% {
-                opacity: 0;
-            }
-            
-            100% {
-                opacity: 1;
-            }
+        div.left {
+            width: 200px;
+            height: 400px;
+            opacity: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="up"></div>
-        <div class="down"></div>
+        <div class="up"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quibusdam autem. Asperiores nulla sequi dolorem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ducimus neque, impedit expedita numquam est.</p></div>
+        <div class="down"> <div class="left"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid, aut, voluptatum deleniti a nesciunt labore impedit ad voluptates, pariatur adipisci fugiat! At cum ut veniam. Quaerat nam ut perspiciatis aliquid corrupti necessitatibus vel quia eveniet. Iure, omnis hic deserunt, beatae magni temporibus quos consectetur quaerat adipisci nulla ipsa quia?</p>
+        </div>
     </div>
 </body>
 </html>
