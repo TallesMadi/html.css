@@ -79,11 +79,11 @@ main a {
     text-decoration: none;
     font-weight: bold;
     transition: all 300ms ease-in-out;
+    animation: change 1.5s ease-in-out infinite forwards alternate;
 }
 
 main a:hover {
-    text-decoration: underline;
-    color: var(--corhover);
+    text-decoration: underline
 }
 
 div.foto {
@@ -152,6 +152,16 @@ footer a:hover {
 
     100% {
         opacity: 0.9;
+    }
+}
+
+@keyframes change {
+    0% {
+        color: var(--corlink);
+    }
+
+    100% {
+        color: var(--corhover);
     }
 }
 
