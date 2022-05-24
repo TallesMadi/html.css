@@ -16,60 +16,76 @@ let tam15 = document.getElementsByClassName('big')[14]
 let tam16 = document.getElementsByClassName('big')[15]
 
 function clique1() {
-    tam1.style.fontSize = `20px`
-    tam2.style.fontSize = `20px`
-    tam3.style.fontSize = `20px`
-    tam4.style.fontSize = `20px`
-    tam5.style.fontSize = `20px`
-    tam6.style.fontSize = `20px`
-    tam7.style.fontSize = `20px`
-    tam8.style.fontSize = `20px`
-    tam9.style.fontSize = `20px`
-    tam10.style.fontSize = `20px`
-    tam11.style.fontSize = `20px`
-    tam12.style.fontSize = `20px`
-    tam13.style.fontSize = `20px`
-    tam14.style.fontSize = `20px`
-    tam15.style.fontSize = `20px`
-    tam16.style.fontSize = `20px`
+    if (tam1.style.fontSize != `20px`) {
+        tam1.style.fontSize = `20px`
+        tam2.style.fontSize = `20px`
+        tam3.style.fontSize = `20px`
+        tam4.style.fontSize = `20px`
+        tam5.style.fontSize = `20px`
+        tam6.style.fontSize = `20px`
+        tam7.style.fontSize = `20px`
+        tam8.style.fontSize = `20px`
+        tam9.style.fontSize = `20px`
+        tam10.style.fontSize = `20px`
+        tam11.style.fontSize = `20px`
+        tam12.style.fontSize = `20px`
+        tam13.style.fontSize = `20px`
+        tam14.style.fontSize = `20px`
+        tam15.style.fontSize = `20px`
+        tam16.style.fontSize = `20px`
+    }
+    else {
+        window.alert('A graduação da fonte já foi alterada.')
+    }
 }
 
 function clique2() {
-    tam1.style.fontSize = `24px`
-    tam2.style.fontSize = `24px`
-    tam3.style.fontSize = `24px`
-    tam4.style.fontSize = `24px`
-    tam5.style.fontSize = `24px`
-    tam6.style.fontSize = `24px`
-    tam7.style.fontSize = `24px`
-    tam8.style.fontSize = `24px`
-    tam9.style.fontSize = `24px`
-    tam10.style.fontSize = `24px`
-    tam11.style.fontSize = `24px`
-    tam12.style.fontSize = `24px`
-    tam13.style.fontSize = `24px`
-    tam14.style.fontSize = `24px`
-    tam15.style.fontSize = `24px`
-    tam16.style.fontSize = `24px`
+    if (tam1.style.fontSize != `24px`) {
+        tam1.style.fontSize = `24px`
+        tam2.style.fontSize = `24px`
+        tam3.style.fontSize = `24px`
+        tam4.style.fontSize = `24px`
+        tam5.style.fontSize = `24px`
+        tam6.style.fontSize = `24px`
+        tam7.style.fontSize = `24px`
+        tam8.style.fontSize = `24px`
+        tam9.style.fontSize = `24px`
+        tam10.style.fontSize = `24px`
+        tam11.style.fontSize = `24px`
+        tam12.style.fontSize = `24px`
+        tam13.style.fontSize = `24px`
+        tam14.style.fontSize = `24px`
+        tam15.style.fontSize = `24px`
+        tam16.style.fontSize = `24px`
+    }
+    else {
+        window.alert(`A graduação da fonte já está no máximo.`)
+    }
 }
 
 function clique3() {
-    tam1.style.fontSize = `16px`
-    tam2.style.fontSize = `16px`
-    tam3.style.fontSize = `16px`
-    tam4.style.fontSize = `16px`
-    tam5.style.fontSize = `16px`
-    tam6.style.fontSize = `16px`
-    tam7.style.fontSize = `16px`
-    tam8.style.fontSize = `16px`
-    tam9.style.fontSize = `16px`
-    tam10.style.fontSize = `16px`
-    tam11.style.fontSize = `16px`
-    tam12.style.fontSize = `16px`
-    tam13.style.fontSize = `16px`
-    tam14.style.fontSize = `16px`
-    tam15.style.fontSize = `16px`
-    tam16.style.fontSize = `16px`
+    
+    if (tam1.style.fontSize != `16px`) {
+        tam1.style.fontSize = `16px`
+        tam2.style.fontSize = `16px`
+        tam3.style.fontSize = `16px`
+        tam4.style.fontSize = `16px`
+        tam5.style.fontSize = `16px`
+        tam6.style.fontSize = `16px`
+        tam7.style.fontSize = `16px`
+        tam8.style.fontSize = `16px`
+        tam9.style.fontSize = `16px`
+        tam10.style.fontSize = `16px`
+        tam11.style.fontSize = `16px`
+        tam12.style.fontSize = `16px`
+        tam13.style.fontSize = `16px`
+        tam14.style.fontSize = `16px`
+        tam15.style.fontSize = `16px`
+        tam16.style.fontSize = `16px`
+    } 
+    else {
+        window.alert('A graduação da fonte já esta no mínimo.')
+    }
 }
 
 function lista() {
