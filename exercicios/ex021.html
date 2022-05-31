@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            animation: back 5s cubic-bezier(0.21, 0.46, 0.73, 0.47) infinite forwards alternate-reverse;
+        }
+
+        .sun {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: rgb(252, 238, 44);
+            margin: 30% auto auto auto;
+        }
+
+        .shadow {
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            animation: eclipse 5s cubic-bezier(0.21, 0.46, 0.73, 0.47) infinite forwards alternate-reverse;
+        }
+
+        @keyframes eclipse {
+            0% {
+                right: 0;
+                background-color: white;
+            }
+
+            10% {
+                background-color: black;
+            }
+
+            50% {
+                transform: translateY(5px);
+                background-color: black;
+            }
+
+            80% {
+                background-color: black;
+            }
+
+            100% {
+                right: 100%;
+                background-color: white;
+            }
+        }
+
+        @keyframes back {
+            0% {
+                background-color: white;
+            }
+
+            10% {
+                background-color: black;
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            80% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun">
+            <div class="shadow"></div>
+        </div>
+    </div>
+</body>
+</html>
