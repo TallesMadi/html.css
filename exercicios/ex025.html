@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo</title>
+    <style>
+        div {
+            border-radius: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Círculo</h1>
+    <p>Calcule a área e a circunferência de um círculo.</p>
+    <label for="raio">Raio:</label>
+    <input type="number" name="raio" id="raio" placeholder="Raio em centímetros">
+    <input type="button" value="Resultado" onclick="clicar()">
+    <p class="res"></p>
+    <div class="circ"></div>
+    <script>
+        function clicar() {
+            var r = window.document.querySelector('input#raio')
+            var div = window.document.querySelector('div.circ')
+            var raio = Number(r.value)
+            var res = window.document.querySelector('p.res')
+            var circ = 2 * Math.PI * raio
+            var area = Math.PI * (raio ** 2)
+            res.innerHTML = `Aproximadamente, a área vale ${Math.round(area)}cm² e a circunferência ${Math.round(circ)}cm.`
+            var di = 2 * raio
+            div.style.height = `${di}px`
+            div.style.width = `${di}px`
+        }
+    </script>
+</body>
+</html>

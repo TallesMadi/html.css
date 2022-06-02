@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to left top, #db4404a4, #08cdebb4);
+            height: 94vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5em;
+            color: white;
+            animation: title 3s linear infinite forwards alternate-reverse;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.281);
+        }
+
+        div.button {
+            display: table;
+            margin: auto;
+        }
+
+        input {
+            width: fit-content;
+            height: fit-content;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            border-radius: 5px;
+            padding: 15px 25px;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.185);
+        }
+
+        input:hover {
+            text-shadow: red -1px 1px, cyan 1px 1px;
+        }
+
+        @keyframes title {
+            0% {
+                text-shadow: none;
+            }
+
+            100% {
+                text-shadow: red -3px 3px, cyan 3px 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cronômetro</h1>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="button">
+            <input type="button" value="Iniciar" id="button-start">
+            <input type="button" value="Parar" id="button-stop">
+            <input type="button" value="Reset" id="button-reset">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var seconds = 00 
+            var tens = 00 
+            var appendTens = document.getElementById("tens")
+            var appendSeconds = document.getElementById("seconds")
+            var buttonStart = document.getElementById('button-start')
+            var buttonStop = document.getElementById('button-stop')
+            var buttonReset = document.getElementById('button-reset')
+            var Interval
+
+            buttonStart.onclick = function() {
+                
+                clearInterval(Interval)
+                Interval = setInterval(startTimer, 10)
+            }
+            
+                buttonStop.onclick = function() {
+                clearInterval(Interval)
+            }
+            
+
+            buttonReset.onclick = function() {
+                clearInterval(Interval)
+                tens = "00"
+                seconds = "00"
+                appendTens.innerHTML = tens
+                appendSeconds.innerHTML = seconds
+            }
+            
+            
+            
+            function startTimer () {
+                tens++ 
+                
+                if(tens <= 9){
+                appendTens.innerHTML = "0" + tens
+                }
+                
+                if (tens > 9){
+                appendTens.innerHTML = tens
+                
+                } 
+                
+                if (tens > 99) {
+                console.log("seconds")
+                seconds++
+                appendSeconds.innerHTML = "0" + seconds
+                tens = 0
+                appendTens.innerHTML = "0" + 0
+                }
+                
+                if (seconds > 9){
+                appendSeconds.innerHTML = seconds
+                }
+            
+            }
+        }
+    </script>
+</body>
+</html>
