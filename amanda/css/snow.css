@@ -195,6 +195,6 @@ span:nth-child(33) {
 
     100% {
         opacity: 0;
-        transform: translate(-100px, 95vh);
+        transform: translate(-100px, 92vh);
     }
 }
