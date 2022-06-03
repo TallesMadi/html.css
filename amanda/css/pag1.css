@@ -7,6 +7,7 @@ body {
     padding: 150px 0 0 0;
     background-image: linear-gradient(to bottom, rgb(17, 16, 16), rgba(19, 18, 18, 0.918));
     position: relative;
+    height: 76.5vh;
 }
 
 div.container {

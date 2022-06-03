@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-body {
-    margin: 0;
-    padding: 150px 0 0 0;
-    background-image: linear-gradient(to bottom, rgb(17, 16, 16), rgba(19, 18, 18, 0.918));
-    position: relative;
-    height: 76.5vh;
-}
-
 span {
     color: rgba(250, 216, 23, 0.87);
     opacity: 0;
@@ -203,6 +195,6 @@ span:nth-child(33) {
 
     100% {
         opacity: 0;
-        transform: translate(-100px, 2900%);
+        transform: translate(-100px, 95vh);
     }
 }
