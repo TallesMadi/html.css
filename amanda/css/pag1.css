@@ -65,7 +65,7 @@ img {
     animation: ploft 4s ease-in-out 3s forwards normal;
 }
 
-h1::selection, p::selection, a::selection {
+h1::selection, p::selection, a::selection, img::selection {
     background-color: white;
     color: #BF2E21;
 } 
@@ -76,7 +76,7 @@ h1::selection, p::selection, a::selection {
     }
     
     100% {
-        color: rgb(250, 131, 155);
+        color: #f89990;
     }
 }
 

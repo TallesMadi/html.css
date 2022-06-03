@@ -9,13 +9,17 @@ body {
 }
 
 span {
-    color: rgba(255, 255, 255, 0.651);
+    color: rgba(250, 216, 23, 0.87);
     opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
     z-index: -1;
+}
+
+span:nth-child(odd) {
+    color: rgb(243, 64, 64);
 }
 
 span:nth-child(1) {
@@ -199,6 +203,6 @@ span:nth-child(33) {
 
     100% {
         opacity: 0;
-        transform: translate(-100px, 600px);
+        transform: translate(-100px, 2900%);
     }
 }
