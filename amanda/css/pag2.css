@@ -5,7 +5,7 @@
 :root {
     --cor1: #F26666;
     --cor2: #F2BE5C;
-    --cor3: #F2DFA7;
+    --cor3: #eee7d4;
     --cor4: #A0D9B9;
     --cor5: #8BD9AD;
     --hover: #f33939;
@@ -89,6 +89,15 @@ nav ul li {
     margin: 5px 0;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     background-color: var(--cor3);
     height: fit-content;
@@ -121,6 +130,16 @@ main h2 {
     text-indent: 15px;
 }
 
+main a {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
 div.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,9 +155,38 @@ div.foto {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.137);
 }
 
+div.foto2 {
+    background: var(--cor5) url('../imagens/beach.jpg') center center no-repeat scroll;
+    border: 3px solid var(--cor5);
+    background-size: cover;
+    height: 300px;
+    max-width: 600px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.137);
+}
+
+div.foto3 {
+    background: var(--cor5) url('../imagens/beach.jpg') center center no-repeat scroll;
+    border: 3px solid var(--cor5);
+    background-size: cover;
+    height: 300px;
+    max-width: 600px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.137);
+}
+
 div.texto {
     text-align: justify;
     text-indent: 1%;
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: #8BD9AD;
+}
+
+footer p {
+    text-align: center;
+    color: white;
 }
 
 @media (max-width: 600px) {
