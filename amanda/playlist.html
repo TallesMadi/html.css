@@ -16,9 +16,11 @@
             margin: 0;
             background-color: #030303;
             font-family: 'Roboto', sans-serif;
+            position: relative;
         }
         
         nav.top {
+            z-index: 2;
             display: flex;
             justify-content: space-between;
             position: relative;
@@ -26,6 +28,7 @@
             height: 64px;
             opacity: 0.8;
             background-color: #212121;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.274);
         }
 
         h2 {
@@ -50,11 +53,13 @@
 
         nav.control {
             display: flex;
-            width: 100vw;
-            background-color: #212121;
-            height: 64px;
-            justify-content: space-around;
             position: relative;
+            justify-content: space-around;
+            width: 100vw;
+            height: 64px;
+            background-color: #212121;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.274);
+            z-index: 2;
         }
 
         input {
@@ -77,8 +82,6 @@
         font-size: 40px;
         padding: 10px;
         }
-
-        .material-symbols-rounded 
 
         span {
             color: white;
@@ -140,9 +143,36 @@
 
         div.som {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
 
+        div.som span:last-child {
+            margin-left: 30px;
+        }
+
+        nav.more {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            grid-gap: 10px;
+            right: 0;
+            width: 300px;
+            height: 508px;
+            background-color: #2121219d;
+            overflow-y: scroll;
+            z-index: 0;
+            opacity: 0;
+            align-items: center;
+        }
+
+        img {
+            max-width: 70px;
+            max-height: 70px;
+        }
+
+        legend {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -158,30 +188,41 @@
             </ul>
         </div>
     </nav>
+    <nav class="more">
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
+        <legend>Metallica - ...And Justice For All</legend>
+    </nav>
     <div class="foto"></div>
     <p>I Love You - Billie Eilish</p>
     <nav class="control">
         <div class="play">
-            <span class="material-symbols-rounded">
-                skip_previous
-                </span>
-            <span class="material-symbols-rounded">
-                play_arrow
-                </span>
-                <span class="material-symbols-rounded">
-                    skip_next
-                    </span>
+            <span class="material-symbols-rounded">skip_previous</span>
+            <span class="material-symbols-rounded">play_arrow</span>
+            <span class="material-symbols-rounded">skip_next</span>
         </div>
         <span class="material-icons-round"></span>
         <input type="range" name="scroll" id="scroll" min="0" max="100" value="0">
         <div class="som">
-            <span class="material-symbols-rounded">
-                volume_up
-                </span>
+            <span class="material-symbols-rounded">volume_up</span>
             <input type="range" name="volume" id="volume" min="0" max="100" value="90" onchange="volume_change()">
+            <span class="material-symbols-rounded" onclick="mais()">queue_music</span>
         </div>
-    </nav>
-    <nav class="more">
     </nav>
     <script src="javascript/js.js" defer></script>
 </body>

@@ -21,3 +21,17 @@ function sair() {
     div.style.overflow = 'hidden'
     div.style.width = '0'
 }
+
+function mais() {
+    let nav = document.querySelector('nav.more')
+    if (nav.style.opacity == 1) {
+        nav.style.opacity = '0'
+        nav.style.height = '0'
+        nav.style.width = '0'
+    } 
+    else {
+        nav.style.height = "508px"
+        nav.style.opacity = "1"
+        nav.style.width = "250px"
+    }
+}
