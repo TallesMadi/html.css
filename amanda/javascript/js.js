@@ -30,7 +30,7 @@ function mais() {
         nav.style.width = '0'
     } 
     else {
-        nav.style.height = "508px"
+        nav.style.height = "543px"
         nav.style.opacity = "1"
         nav.style.width = "250px"
     }
