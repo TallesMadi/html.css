@@ -143,14 +143,14 @@ function mute_sound(){
 function playsong(){
   track.play();
   Playing_song = true;
-  play.innerHTML = '<span class="material-symbols-outlined">pause</span>';
+  play.innerHTML = '<span class="material-symbols">pause</span>';
 }
 
 //pause song
 function pausesong(){
 	track.pause();
 	Playing_song = false;
-	play.innerHTML = '<span class="material-symbols-rounded">play_arrow</span>';
+	play.innerHTML = '<span class="material-symbols">play_arrow</span>';
 }
 
 
