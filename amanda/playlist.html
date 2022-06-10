@@ -192,6 +192,11 @@
             width: 100%;
         }
 
+        p::selection, span::selection, input::selection, h2::selection {
+            background-color: white;
+            color: #030303;
+        }
+
         @media (max-width: 500px) {
             .material-symbols-rounded {
                 margin-top: 15px;
@@ -203,7 +208,7 @@
             }
 
             body {
-                height: 100vh;
+                height: 76.5vh;
             }
         }
     </style>
@@ -252,7 +257,7 @@
         <a href="#"><img src="https://img.discogs.com/flARaxER_5JfixqCIJqm3xv0ceU=/fit-in/595x590/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2151379-1266788680.jpeg.jpg" alt="Capa Album"></a>
         <legend>Tribalistas - Velha Infância</legend>
     </nav>
-    <div class="foto"></div>
+    <div class="foto" onclick="sair()"></div>
     <p>I Love You - Billie Eilish</p>
     <div class="container">
         <nav class="control">
