@@ -27,9 +27,11 @@ function mais() {
     if (nav.style.opacity == 1) {
         nav.style.opacity = '0'
         nav.style.visibility = 'hidden'
+        nav.style.width = '0'
     } 
     else {
         nav.style.opacity = "1"
         nav.style.visibility = 'visible'
+        nav.style.width = '300px'
     }
 }

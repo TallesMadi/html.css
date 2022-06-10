@@ -36,12 +36,15 @@
         }
 
         div.foto {
-            background: lightslategrey url('imagens/billie.jpg') center center no-repeat scroll;
-            background-size: cover;
             margin: 50px auto 15px auto;
             max-width: 360px;
             height: 360px;
             box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.418);
+        }
+
+        div.foto img {
+            max-width: 360px;
+            height: 360px;
         }
 
         p {
@@ -65,11 +68,15 @@
             cursor: pointer;
         }
 
-        input#scroll {
+        input#duration_slider {
             position: absolute;
             width: 100%;
-            height: 10px;
-            top: -11%;
+            height: 2px;
+            top: -4%;
+        }
+
+        input#volume {
+            margin-top: 27.5px;
         }
 
         .material-symbols-rounded {
@@ -167,7 +174,7 @@
             grid-template-columns: 1fr 150px;
             grid-gap: 10px;
             right: 0;
-            width: 300px;
+            width: 0;
             height: 538px;
             background-color: #2121219d;
             overflow-y: scroll;
@@ -177,9 +184,10 @@
             transition: all 150ms ease-in-out;
         }
 
-        img {
+        nav.more img {
             max-width: 70px;
             height: 70px;
+            cursor: pointer;
         }
 
         legend {
@@ -190,6 +198,24 @@
             position: absolute;
             bottom: -159px;
             width: 100%;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            outline: none;
+            height: 2px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 15px;
+            width: 15px;
+            background: #FF0000;
+            border-radius: 50%;
+        }
+
+        p#volume_show {
+            margin-left: 10px;
         }
 
         p::selection, span::selection, input::selection, h2::selection {
@@ -212,7 +238,7 @@
             }
 
             nav.more {
-                height: 630px
+                height: 650px
             }
         }
     </style>
@@ -220,7 +246,7 @@
 <body>
     <nav class="top">
         <input type="button" value="&#9776;" onclick="clicar()">
-        <h2>Playlist</h2>
+        <h2>Playlist &#9835;</h2>
         <div class="menu">
             <ul>
                 <li><a href="aniversario.html" target="_self" rel="author">Home</a></li>
@@ -231,54 +257,63 @@
         </div>
     </nav>
     <nav class="more">
-        <a href="#"><img src="https://i2.wp.com/lyricsfa.com/wp-content/uploads/2019/06/Ali-Gatie-Its-You-Lyrics.jpg?fit=1280%2C720&ssl=1" alt="Capa Album"></a>
+        <img src="imagens/ali_gatie.webp" alt="Capa Album" onclick="clique12()">
         <legend>Ali Gatie - It's You</legend>
 
-        <a href="#"><img src="https://th.bing.com/th/id/OIP.FxhDQOulAvkRZqISkAMq4QAAAA?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <img src="imagens/ac.jpg" alt="Capa Album" onclick="clique2()">
         <legend>Arctic Monkeys - Do I Wanna Know</legend>
 
-        <a href="#"><img src="https://th.bing.com/th/id/OIP.FxhDQOulAvkRZqISkAMq4QAAAA?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <img src="imagens/ac.jpg" alt="Capa Album" onclick="clique3()">
         <legend>Arctic Monkeys - I Wanna Be Yours</legend>
 
-        <a href="#"><img src="https://img.discogs.com/m2cOzYIo6ONUKxbdQu3q1QvnLHk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11888736-1547742934-6670.jpeg.jpg" alt="Capa Album"></a>
+        <img src="imagens/billie.jpg" alt="Capa Album" onclick="clique()">
+        <legend>Billie Eilish - I Love You</legend>
+
+        <img src="imagens/lovely.jpg" alt="Capa Album" onclick="clique4()">
         <legend>Billie Eilish - Lovely</legend>
 
-        <a href="#"><img src="https://i.ytimg.com/vi/VQ2NPHdTb-0/maxresdefault.jpg" alt="Capa Album"></a>
+        <img src="imagens/delacruz.jpg" alt="Capa Album" onclick="clique5()">
         <legend>Delacruz - Me Leva</legend>
 
-        <a href="#"><img src="https://th.bing.com/th/id/R.eed840c6eccbafc90232ead4eee7e879?rik=6gboaH7seLMzCA&riu=http%3a%2f%2fimg.wennermedia.com%2f920-width%2frs-119428-20120917-black-500x-1347907684.jpg&ehk=tOe0xweCDZ5pGGn4E1fGYeKSCs0KQ%2bNPZDqgQDFvb3Q%3d&risl=&pid=ImgRaw&r=0" alt="Capa Album"></a>
+        <img src="imagens/metallica.jpg" alt="Capa Album" onclick="clique6()">
         <legend>Metallica - Nothing Else Metters</legend>
 
-        <a href="#"><img src="https://th.bing.com/th/id/R.6926fa915815d964d913cd956d8f6198?rik=pTAlb4RiFcDFCQ&riu=http%3a%2f%2fimages.genius.com%2f687b23adeb6d86c1ec58058735e95371.500x500x1.jpg&ehk=WZ52cfpWFsGRpw%2bZxl0TAVV%2b1pmQphtRsWPcKYZLdY0%3d&risl=&pid=ImgRaw&r=0" alt="Capa Album"></a>
+        <img src="imagens/sorri.jpg" alt="Capa Album" onclick="clique7()">
         <legend>Natiruts - Sorri, Sou Rei</legend>
 
-        <a href="#"><img src="https://i.ytimg.com/vi/DjNqxTODmuc/maxresdefault.jpg" alt="Capa Album"></a>
+        <img src="imagens/poesia.jpg" alt="Capa Album" onclick="clique8()">
         <legend>Poesia Acústica 3</legend>
 
-        <a href="#"><img src="https://th.bing.com/th/id/OIP.RUVssM-oEIq__XqyfqDPjAHaEK?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <img src="imagens/rubel.jpg" alt="Capa Album" onclick="clique9()">
         <legend>Rubel - Partilhar</legend>
 
-        <a href="#"><img src="https://img.discogs.com/flARaxER_5JfixqCIJqm3xv0ceU=/fit-in/595x590/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2151379-1266788680.jpeg.jpg" alt="Capa Album"></a>
+        <img src="imagens/tomjobim.jpg" alt="Capa Album" onclick="clique10()">
+        <legend>Tom Jobim - Pela Luz Dos Olhos Teus</legend>
+
+        <img src="imagens/tribalistas.jpg" alt="Capa Album" onclick="clique11()">
         <legend>Tribalistas - Velha Infância</legend>
     </nav>
-    <div class="foto" onclick="sair()"></div>
-    <p>I Love You - Billie Eilish</p>
+    <div class="foto">
+        <img src="imagens/billie.jpg" alt="capa musica" id="track_image">
+    </div>
+    <p id="title">Billie Eilish - I Love You</p>
     <div class="container">
         <nav class="control">
             <div class="play">
-                <span class="material-symbols-rounded">skip_previous</span>
-                <span class="material-symbols-rounded">play_arrow</span>
-                <span class="material-symbols-rounded">skip_next</span>
+                <span class="material-symbols-rounded" onclick="previous_song()" id="pre">skip_previous</span>
+                <span class="material-symbols-rounded" onclick="justplay()" id="play">play_arrow</span>
+                <span class="material-symbols-rounded" onclick="next_song()" id="next">skip_next</span>
             </div>
-            <span class="material-icons-round"></span>
-            <input type="range" name="scroll" id="scroll" min="0" max="100" value="0">
+            <input type="range" name="duration_slider" id="duration_slider" min="0" max="100" value="0" onchange="change_duration()">
             <div class="som">
-                <span class="material-symbols-rounded">volume_up</span>
+                <span class="material-symbols-rounded" id="volume_icon" onclick="mute_sound()">volume_up</span>
                 <input type="range" name="volume" id="volume" min="0" max="100" value="90" onchange="volume_change()">
+                <p id="volume_show">90</p>
             </div>
             <span class="material-symbols-rounded lista" onclick="mais()">queue_music</span>
         </nav>
     </div>
     <script src="javascript/js.js" defer></script>
+    <script src="javascript/playlist.js" defer></script>
 </body>
 </html>
