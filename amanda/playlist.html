@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon-love.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <title>Playlist</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -18,7 +17,7 @@
             font-family: 'Roboto', sans-serif;
             position: relative;
         }
-        
+
         nav.top {
             z-index: 2;
             display: flex;
@@ -39,7 +38,7 @@
         div.foto {
             background: lightslategrey url('imagens/billie.jpg') center center no-repeat scroll;
             background-size: cover;
-            margin: 5% auto 1% auto;
+            margin: 50px auto 15px auto;
             max-width: 360px;
             height: 360px;
             box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.418);
@@ -48,7 +47,7 @@
         p {
             color: rgba(255, 255, 255, 0.938);
             text-align: center;
-            margin-bottom: 82px;
+            margin-bottom: 40px;
         }
 
         nav.control {
@@ -80,12 +79,19 @@
             'GRAD' 0,
             'opsz' 48;
             font-size: 40px;
-            padding: 10px;
+            padding: 5px;
+            margin-top: 5px;
         }
 
         span {
             color: white;
             cursor: pointer;
+            border-radius: 100%;
+            transition: all 150ms ease-in-out;
+        }
+
+        span:hover {
+            background-color: #3b3b3b;
         }
 
         div.menu {
@@ -146,8 +152,13 @@
             justify-content: space-between;
         }
 
-        div.som span:last-child {
-            margin-left: 30px;
+        span.list {
+           position: absolute;
+           right: 0;
+        }
+
+        span.list:hover {
+            border-radius: 0%;
         }
 
         nav.more {
@@ -157,21 +168,35 @@
             grid-gap: 10px;
             right: 0;
             width: 300px;
-            height: 543px;
+            height: 538px;
             background-color: #2121219d;
             overflow-y: scroll;
             z-index: 0;
             opacity: 0;
             align-items: center;
+            transition: all 150ms ease-in-out;
         }
 
         img {
             max-width: 70px;
-            max-height: 70px;
+            height: 70px;
         }
 
         legend {
             color: white;
+        }
+
+        div.container {
+            position: absolute;
+            bottom: -159px;
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            .material-symbols-rounded {
+                margin-top: 15px;
+                font-size: 30px;
+            }
         }
     </style>
 </head>
@@ -189,41 +214,54 @@
         </div>
     </nav>
     <nav class="more">
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
-        <img src="https://th.bing.com/th/id/R.32ce1524fe267859d8b1e4543def9630?rik=U8U0nrzaX59SYQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1712%2f4551%2fproducts%2fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3fv%3d1551586076&ehk=V0FSK4bjhjxhvOUQeu2FNff3IWmGTy4SOZvgjy%2bRQYc%3d&risl=&pid=ImgRaw&r=0" alt="teste">
-        <legend>Metallica - ...And Justice For All</legend>
+        <a href="#"><img src="https://i2.wp.com/lyricsfa.com/wp-content/uploads/2019/06/Ali-Gatie-Its-You-Lyrics.jpg?fit=1280%2C720&ssl=1" alt="Capa Album"></a>
+        <legend>Ali Gatie - It's You</legend>
+
+        <a href="#"><img src="https://th.bing.com/th/id/OIP.FxhDQOulAvkRZqISkAMq4QAAAA?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <legend>Arctic Monkeys - Do I Wanna Know</legend>
+
+        <a href="#"><img src="https://th.bing.com/th/id/OIP.FxhDQOulAvkRZqISkAMq4QAAAA?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <legend>Arctic Monkeys - I Wanna Be Yours</legend>
+
+        <a href="#"><img src="https://img.discogs.com/m2cOzYIo6ONUKxbdQu3q1QvnLHk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11888736-1547742934-6670.jpeg.jpg" alt="Capa Album"></a>
+        <legend>Billie Eilish - Lovely</legend>
+
+        <a href="#"><img src="https://i.ytimg.com/vi/VQ2NPHdTb-0/maxresdefault.jpg" alt="Capa Album"></a>
+        <legend>Delacruz - Me Leva</legend>
+
+        <a href="#"><img src="https://th.bing.com/th/id/R.eed840c6eccbafc90232ead4eee7e879?rik=6gboaH7seLMzCA&riu=http%3a%2f%2fimg.wennermedia.com%2f920-width%2frs-119428-20120917-black-500x-1347907684.jpg&ehk=tOe0xweCDZ5pGGn4E1fGYeKSCs0KQ%2bNPZDqgQDFvb3Q%3d&risl=&pid=ImgRaw&r=0" alt="Capa Album"></a>
+        <legend>Metallica - Nothing Else Metters</legend>
+
+        <a href="#"><img src="https://th.bing.com/th/id/R.6926fa915815d964d913cd956d8f6198?rik=pTAlb4RiFcDFCQ&riu=http%3a%2f%2fimages.genius.com%2f687b23adeb6d86c1ec58058735e95371.500x500x1.jpg&ehk=WZ52cfpWFsGRpw%2bZxl0TAVV%2b1pmQphtRsWPcKYZLdY0%3d&risl=&pid=ImgRaw&r=0" alt="Capa Album"></a>
+        <legend>Natiruts - Sorri, Sou Rei</legend>
+
+        <a href="#"><img src="https://i.ytimg.com/vi/DjNqxTODmuc/maxresdefault.jpg" alt="Capa Album"></a>
+        <legend>Poesia Acústica 3</legend>
+
+        <a href="#"><img src="https://th.bing.com/th/id/OIP.RUVssM-oEIq__XqyfqDPjAHaEK?pid=ImgDet&rs=1" alt="Capa Album"></a>
+        <legend>Rubel - Partilhar</legend>
+
+        <a href="#"><img src="https://img.discogs.com/flARaxER_5JfixqCIJqm3xv0ceU=/fit-in/595x590/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2151379-1266788680.jpeg.jpg" alt="Capa Album"></a>
+        <legend>Tribalistas - Velha Infância</legend>
     </nav>
     <div class="foto"></div>
     <p>I Love You - Billie Eilish</p>
-    <nav class="control">
-        <div class="play">
-            <span class="material-symbols-rounded">skip_previous</span>
-            <span class="material-symbols-rounded">play_arrow</span>
-            <span class="material-symbols-rounded">skip_next</span>
-        </div>
-        <span class="material-icons-round"></span>
-        <input type="range" name="scroll" id="scroll" min="0" max="100" value="0">
-        <div class="som">
-            <span class="material-symbols-rounded">volume_up</span>
-            <input type="range" name="volume" id="volume" min="0" max="100" value="90" onchange="volume_change()">
-            <span class="material-symbols-rounded" onclick="mais()">queue_music</span>
-        </div>
-    </nav>
+    <div class="container">
+        <nav class="control">
+            <div class="play">
+                <span class="material-symbols-rounded">skip_previous</span>
+                <span class="material-symbols-rounded">play_arrow</span>
+                <span class="material-symbols-rounded">skip_next</span>
+            </div>
+            <span class="material-icons-round"></span>
+            <input type="range" name="scroll" id="scroll" min="0" max="100" value="0">
+            <div class="som">
+                <span class="material-symbols-rounded">volume_up</span>
+                <input type="range" name="volume" id="volume" min="0" max="100" value="90" onchange="volume_change()">
+            </div>
+            <span class="material-symbols-rounded lista" onclick="mais()">queue_music</span>
+        </nav>
+    </div>
     <script src="javascript/js.js" defer></script>
 </body>
 </html>
