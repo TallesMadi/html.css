@@ -156,6 +156,9 @@ function pausesong(){
 
 // next song
 function next_song(){
+  track.pause();
+	Playing_song = false;
+	play.innerHTML = '<span class="material-symbols">play_arrow</span>';
 	if(index_no < All_song.length - 1){
 		index_no += 1;
 		load_track(index_no);
@@ -169,72 +172,108 @@ function next_song(){
 }
 
 function clique() {
+    track.pause();
+  	Playing_song = false;
+	  play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 0
     load_track(index_no)
     playsong()
 }
 
 function clique2() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 1
     load_track(index_no)
     playsong()
 }
 
 function clique3() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 2
     load_track(index_no)
     playsong()
 }
 
 function clique4() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 3
     load_track(index_no)
     playsong()
 }
 
 function clique5() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 4
     load_track(index_no)
     playsong()
 }
 
 function clique6() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 5
     load_track(index_no)
     playsong()
 }
 
 function clique7() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 6
     load_track(index_no)
     playsong()
 }
 
 function clique8() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 7
     load_track(index_no)
     playsong()
 }
 
 function clique9() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 8
     load_track(index_no)
     playsong()
 }
 
 function clique10() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 9
     load_track(index_no)
     playsong()
 }
 
 function clique11() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 10
     load_track(index_no)
     playsong()
 }
 
 function clique12() {
+    track.pause();
+    Playing_song = false;
+    play.innerHTML = '<span class="material-symbols">play_arrow</span>';
     index_no = 11
     load_track(index_no)
     playsong()
@@ -243,6 +282,9 @@ function clique12() {
 
 // previous song
 function previous_song(){
+  track.pause();
+	Playing_song = false;
+	play.innerHTML = '<span class="material-symbols">play_arrow</span>';
 	if(index_no > 0){
 		index_no -= 1;
 		load_track(index_no);
@@ -280,11 +322,9 @@ function range_slider(){
        
        // function will run when the song is over
        if(track.ended){
-       	 play.innerHTML = '<span class="material-symbols-rounded">play_arrow</span>';
-           if(autoplay==1){
-		       index_no += 1;
-		       load_track(index_no);
-		       playsong();
-           }
+          play.innerHTML = '<span class="material-symbols-rounded">play_arrow</span>';
+          index_no += 1;
+          load_track(index_no);
+          playsong();
 	    }
-     }
+}
