@@ -4,12 +4,14 @@ function clicar() {
         div.style.opacity = '0'
         div.style.height = '0'
         div.style.overflow = 'hidden'
+        div.style.visibility = 'hidden'
         div.style.width = '0'
     } 
     else {
         div.style.height = "fit-content"
         div.style.opacity = "1"
         div.style.overflow = "inherit"
+        div.style.visibility = 'visible'
         div.style.width = "fit-content"
     }
 }
