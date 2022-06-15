@@ -99,13 +99,28 @@
         div.quiz {
             margin: 50px auto;
             background-color: white;
-            max-width: 600px;
+            max-width: 800px;
+            height: fit-content;
+        }
+        
+        div.container {
+            margin: 40px 0;
+            max-width: 800px;
             height: fit-content;
             box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.288);
         }
 
         div.alternativas {
             padding: 15px 15px 30px 15px;        
+        }
+
+        div.res {
+            max-width: 800px;
+            height: fit-content;
+            background-color: #0095D5;
+            color: white;
+            padding: 15px;
+            opacity: 0;
         }
 
         input.alt, p {
@@ -125,14 +140,34 @@
             border: none;
             cursor: pointer;
             font-size: 20px;
+            font-weight: bold;
             transition: all 250ms ease-in-out;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.171);
         }
 
         input.botao:hover {
             background-color: #42bef3;
-            font-weight: bold;
         }
+
+        input[type="radio"] {
+            cursor: pointer;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 5px;
+        }
+
+        p::selection, label::selection {
+            color: white;
+            background-color: #0095D5;
+        }
+
+        h2::selection {
+            color: #0095D5;
+            background-color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -149,19 +184,190 @@
             </ul>
         </div>
     </nav>
+
     <div class="quiz">
-        <div class="top">
-            <h2>Questão 1</h2>
+        <div class="container">
+            <div class="top">
+                <h2>Questão 1</h2>
+            </div>
+            <div class="alternativas">
+               <input type="radio" name="alt" id="alt1" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt" id="alt2" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt" id="alt3" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt" id="alt4" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
         </div>
-       <div class="alternativas">
-           <input type="radio" name="alt" id="alt1" class="alt"><label for="alternativa">A)</label>
+
+    <div class="container">
+        <div class="top">
+            <h2>Questão 2</h2>
+        </div>
+        <div class="alternativas">
+           <input type="radio" name="alt2" id="alt5" class="alt"><label for="alternativa">A)</label>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
-            <input type="radio" name="alt" id="alt2" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
-            <input type="radio" name="alt" id="alt3" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
-            <input type="radio" name="alt" id="alt4" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
-       </div>
-       <input type="button" value="Clique" class="botao">
+            <input type="radio" name="alt2" id="alt6" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt2" id="alt7" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt2" id="alt8" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="top">
+        <h2>Questão 3</h2>
+        </div>
+        <div class="alternativas">
+        <input type="radio" name="alt3" id="alt9" class="alt"><label for="alternativa">A)</label>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt3" id="alt10" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt3" id="alt11" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt3" id="alt12" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top">
+            <h2>Questão 4</h2>
+        </div>
+        <div class="alternativas">
+        <input type="radio" name="alt4" id="alt13" class="alt"><label for="alternativa">A)</label>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt4" id="alt14" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt4" id="alt15" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            <input type="radio" name="alt4" id="alt16" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top">
+            <h2>Questão 5</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt5" id="alt17" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt5" id="alt18" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt5" id="alt19" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt5" id="alt20" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+    </div>
+
+        <div class="container">
+            <div class="top">
+                <h2>Questão 6</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt6" id="alt21" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt6" id="alt22" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt6" id="alt23" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt6" id="alt24" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="top">
+                <h2>Questão 7</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt7" id="alt25" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt7" id="alt26" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt7" id="alt27" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt7" id="alt28" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="top">
+                <h2>Questão 8</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt8" id="alt29" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt8" id="alt30" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt8" id="alt31" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt8" id="alt32" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="top">
+                <h2>Questão 9</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt9" id="alt33" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt9" id="alt34" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt9" id="alt35" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt9" id="alt36" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="top">
+                <h2>Questão 10</h2>
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="alt10" id="alt37" class="alt"><label for="alternativa">A)</label>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt10" id="alt38" class="alt"><label for="alternativa">B)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt10" id="alt39" class="alt"><label for="alternativa">C)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+                <input type="radio" name="alt10" id="alt40" class="alt"><label for="alternativa">D)</label><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quas quam vel, nesciunt unde perferendis.</p> <br> <br>
+            </div>
+        </div>
+
+       <input type="button" value="Clique" class="botao" onclick="resultado()">
+    </div>
+    <div class="res"></div>
+
+    <script>
+        function resultado() {
+            let res = document.getElementsByName('alt')
+            let res2 = document.getElementsByName('alt2')
+            let res3 = document.getElementsByName('alt3')
+            let res4 = document.getElementsByName('alt4')
+            let res5 = document.getElementsByName('alt5')
+            let res6 = document.getElementsByName('alt6')
+            let res7 = document.getElementsByName('alt7')
+            let res8 = document.getElementsByName('alt8')
+            let res9 = document.getElementsByName('alt9')
+            let res10 = document.getElementsByName('alt10')
+            let div = document.querySelector('div.res')
+            let soma = 0
+            if (res[0].checked) {
+                soma++
+            } 
+            if (res2[2].checked) {
+                soma++
+            }
+            if (res3[1].checked) {
+                soma++
+            }
+            if (res4[3].checked) {
+                soma++
+            }
+            if (res5[0].checked) {
+                soma++
+            }
+            if (res6[3].checked) {
+                soma++
+            }
+            if (res7[1].checked) {
+                soma++
+            }
+            if (res8[1].checked) {
+                soma++
+            }
+            if (res9[2].checked) {
+                soma++
+            }
+            if (res10[3].checked) {
+                soma++
+            }
+            div.style.opacity = '1'
+            div.innerHTML = `${soma}`
+        }
+    </script>
     <script src="javascript/js.js" defer></script>
 </body>
 </html>
