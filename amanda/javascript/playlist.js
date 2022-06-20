@@ -4,6 +4,7 @@ let next = document.querySelector('span#next')
 let title = document.querySelector('p#title')
 let slider = document.querySelector('input#duration_slider')
 let recent_volume = document.querySelector('input#volume')
+let span = document.querySelector('span#volume_icon')
 let volume_show = document.querySelector('p#volume_show');
 
 let timer;
@@ -117,6 +118,9 @@ load_track(index_no);
 
 //mute sound function
 function mute_sound(){
+  span.innerHTML = `<span class="material-symbols">
+  volume_off
+  </span>`
 	track.volume = 0;
 	volume.value = 0;
 	volume_show.innerHTML = 0;
@@ -300,6 +304,7 @@ function previous_song(){
 
 // change volume
 function volume_change(){
+  span.innerHTML = `<span class="material-symbols">volume_up</span>`
 	volume_show.innerHTML = recent_volume.value;
 	track.volume = recent_volume.value / 100;
 }

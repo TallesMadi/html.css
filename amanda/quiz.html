@@ -124,6 +124,10 @@
             opacity: 0;
         }
 
+        div.res h2 {
+            text-align: center;
+        }
+
         input.alt, p {
             display: inline;
         }
@@ -191,9 +195,9 @@
         <div class="menu">
             <ul>
                 <li><a href="aniversario.html" target="_self" rel="author">Home</a></li>
+                <li><a href="aniversario2.html" target="_self" rel="author">Página Inicial</a></li>
                 <li><a href="playlist.html" target="_self" rel="author">Playlist</a></li>
                 <li><a href="#" target="_self" rel="author">Galeria</a></li>
-                <li><a href="quiz.html" target="_self" rel="author">Quiz</a></li>
                 <li><a href="#" target="_self" rel="author">Receitas</a></li>
             </ul>
         </div>
@@ -330,58 +334,11 @@
             </div>
         </div>
 
-       <input type="button" value="Clique" class="botao" onclick="resultado()">
+       <input type="button" value="Resultado" class="botao resultado" onclick="resultado()">
     </div>
     <div class="res"></div>
 
-    <script>
-        function resultado() {
-            let res = document.getElementsByName('alt')
-            let res2 = document.getElementsByName('alt2')
-            let res3 = document.getElementsByName('alt3')
-            let res4 = document.getElementsByName('alt4')
-            let res5 = document.getElementsByName('alt5')
-            let res6 = document.getElementsByName('alt6')
-            let res7 = document.getElementsByName('alt7')
-            let res8 = document.getElementsByName('alt8')
-            let res9 = document.getElementsByName('alt9')
-            let res10 = document.getElementsByName('alt10')
-            let div = document.querySelector('div.res')
-            let soma = 0
-            if (res[0].checked) {
-                soma++
-            } 
-            if (res2[2].checked) {
-                soma++
-            }
-            if (res3[1].checked) {
-                soma++
-            }
-            if (res4[3].checked) {
-                soma++
-            }
-            if (res5[0].checked) {
-                soma++
-            }
-            if (res6[3].checked) {
-                soma++
-            }
-            if (res7[1].checked) {
-                soma++
-            }
-            if (res8[1].checked) {
-                soma++
-            }
-            if (res9[2].checked) {
-                soma++
-            }
-            if (res10[3].checked) {
-                soma++
-            }
-            div.style.opacity = '1'
-            div.innerHTML = `${soma}`
-        }
-    </script>
+    <script src="javascript/quiz.js" defer></script>
     <script src="javascript/js.js" defer></script>
 </body>
 </html>
