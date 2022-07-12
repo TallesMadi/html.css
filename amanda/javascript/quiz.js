@@ -51,21 +51,21 @@ function resultado() {
 
 
     if (final <= 1) {
-        div.innerHTML += `<h2>${final}/10</h2> <p>Você conseguiu errar tudo isso...agora eu me pergunto: Como? Você só pode estar de brincadeira comigo, né? Se for verdade eu fico triste demais.</p>`            
+        div.innerHTML = `<h2>${final}/10</h2> <br> <p>Você conseguiu errar tudo isso...agora eu me pergunto: Como? Você só pode estar de brincadeira comigo, né? Se for verdade eu fico triste demais.</p>`            
     }
     else if (final >= 2 && final <= 3) {
-        div.innerHTML += `<h2>${final}/10</h2>`
+        div.innerHTML = `<h2>${final}/10</h2> <br> <p>Se você procurar agora no dicionário o significado de decepção, vai encontrar isso aí!</p>`
     }
-    else if (final >= 5 && final <= 4) {
-        div.innerHTML += `<h2>${final}/10</h2>`
+    else if (final >= 4 && final <= 5) {
+        div.innerHTML = `<h2>${final}/10</h2> <br> <p>Acho melhor você contar pra mim que foi outra pessoa que fez o teste, hein!</p>`
     }
-    else if (final >= 7 && final <= 6) {
-        div.innerHTML += `<h2>${final}/10</h2>`
+    else if (final >= 6 && final <= 7) {
+        div.innerHTML = `<h2>${final}/10</h2> <br> <p>Passou de ano...mas foi bem? não, não foi nada bem #chateado</p>`
     }
     else if (final >= 8 && final <= 9) {
-        div.innerHTML += `<h2>${final}/10</h2>`
+        div.innerHTML = `<h2>${final}/10</h2> <br> <p>Parabéns, você foi muito bem...mas convenhamos, você pode melhorar, né?</p>`
     }
     else if (final = 10) {
-        div.innerHTML += `<h2>10/10</h2> <p><br> PARABÉNS! Você mostrou que realmente se conhece, isso é muito bom. Mesmo assim eu não esperava outra resposta sem ser essa :) </p>`
+        div.innerHTML = `<h2>10/10</h2> <br> <p> PARABÉNS! Você mostrou que realmente se conhece, isso é muito bom. Mesmo assim eu não esperava outra resposta sem ser essa :) </p>`
     }            
 }

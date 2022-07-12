@@ -130,6 +130,12 @@ div.res h2 {
     text-align: center;
 }
 
+div.res div.foto {
+    max-width: 600px;
+    height: 300px;
+    margin: 10px auto;
+}
+
 input.alt, p {
     display: inline;
 }
