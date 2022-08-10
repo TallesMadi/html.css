@@ -147,7 +147,7 @@ div.container {
 }
 
 div.foto {
-    background: var(--cor5) url('../imagens/beach.jpg') center center no-repeat scroll;
+    background: var(--cor5) url('../imagens/music.jpg') center center no-repeat scroll;
     border: 3px solid var(--cor5);
     background-size: cover;
     height: 300px;
@@ -156,7 +156,7 @@ div.foto {
 }
 
 div.foto2 {
-    background: var(--cor5) url('../imagens/beach.jpg') center center no-repeat scroll;
+    background: var(--cor5) url('../imagens/gallery.jpg') center center no-repeat scroll;
     border: 3px solid var(--cor5);
     background-size: cover;
     height: 300px;
