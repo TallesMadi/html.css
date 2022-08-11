@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
     --cor1: #FBF5DD;
@@ -11,9 +11,24 @@
 body {
     margin: 0;
     padding: 0;
+    background: #f1e9c8 url('../imagens/pattern-gallery.png') center center repeat scroll;
+    background-size: 600px;
     font-family: 'Roboto', sans-serif;
     color: black;
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cor1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ebdda4;
+    border-radius: 100vw;
 }
 
 nav {
@@ -28,6 +43,15 @@ nav h2 {
     margin-left: 5%;
     font-size: 1.75em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.068);
+}
+
+header {
+    padding: 15px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25pt;
+    background-image: linear-gradient(to right, #fbf5dde0, #fbf5dd8a);
 }
 
 div.menu {
@@ -86,26 +110,37 @@ nav a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
     margin: 0 auto;
 }
 
 div.foto {
-    flex: 1 1 150px;
+    flex: 1 1 125px;
     margin: 0 5px 10px 5px;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     display: block;
+    border-radius: 5px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.226);
     transition: all 150ms ease-in-out;
 }
 
 img:hover {
-    border-radius: 5px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.863);
     cursor: pointer;
 }
 
+footer {
+    background-color: #ebdda4;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 800px) {
+    div.foto {
+        flex: 1 1 200px;
+    }
+}
